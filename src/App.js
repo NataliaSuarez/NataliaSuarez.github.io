@@ -1,22 +1,30 @@
 import React from 'react';
-import logo from './logo.svg';
+import fire from './fire.svg';
 import './App.css';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
+        <img src={fire} className="App-logo" alt="logo" />
         <p>
-          Edit <code>src/App.js</code> and save to reload.
+          nat42.
         </p>
         <a
           className="App-link"
-          href="https://reactjs.org"
+          href="https://github.com/NataliaSuarez"
           target="_blank"
           rel="noopener noreferrer"
         >
-          Learn React
+          &gt; github
+        </a>
+        <a
+          className="App-link"
+          href="https://twitter.com/natsuarez42"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          &gt; twitter
         </a>
       </header>
     </div>
