@@ -5,7 +5,7 @@
 
 .App-logo {
   height: 40vmin;
-  align-self: start;
+  align-self: center;
 }
 
 .App-header {
@@ -13,14 +13,46 @@
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  align-items: left;
+  justify-content: flex-start;
+  /* align-items: left; */
   font-size: calc(10px + 2vmin);
   color: #666666;
   padding: 1em;
 }
 
+@media only screen and (min-width: 768px) {
+  .App-header {
+    flex-direction: row;
+    justify-content: flex-start;
+  }
+  .App-logo {
+    align-self: flex-start;
+  }
+}
+.header-elem-box {
+  padding: 0.5em;
+}
+.header-elem-box p {
+  margin: 0;
+}
+.title {
+  font-weight: 600;
+  color: #039b30;
+}
+
+.description {
+  font-weight: 200;
+  font-size: calc(5px + 1.5vmin);
+  font-style: italic;
+}
+.contact-list{
+  display: flex;
+  flex-direction: column;
+}
 .App-link {
-  color: #a0d623;
+  color: #039b30;
+  font-weight: 200;
+  font-size: calc(5px + 1.5vmin);
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&display=swap');
