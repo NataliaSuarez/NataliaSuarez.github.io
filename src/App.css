@@ -68,6 +68,7 @@
   inline-size: max-content;
   text-decoration: unset;
   align-self: flex-end;
+  font-weight: 500;
 }
 
 .contact-list-item:hover {
@@ -77,8 +78,8 @@
 .App-link {
   /* color: #039b30; */
   color: #fafafa;
-  font-weight: 400;
-  font-size: calc(7px + 2vmin);
+  /* font-weight: 400; */
+  font-size: calc(7px + 1.7vmin);
 }
 
 
