@@ -13,31 +13,66 @@ import mysql from './imgs/mysql.png';
 import posgrest from './imgs/posgresql.png';
 import docker from './imgs/docker.svg';
 import frontend from './desing/frontend.svg';
+import backend from './desing/backend.svg';
+import plataformas from './desing/plataformas-online.svg';
+import desing from './desing/ui-ux-design.svg';
 import './App.css';
 
 function Skills () {
   return (
     <div>
-      <div className="App-body without-padding-bottom">
-        <p className="title without-margin-bottom without-padding-bottom">
-          <strong>&gt;</strong> skills
-        </p>
-      </div>
       <Carousel>
         <Carousel.Item>
-          <section
-            className="w-100 height-400 background-gray"
-            src="https://cdn.pixabay.com/photo/2019/07/16/18/18/frontend-4342425_960_720.png"
-            alt="FRONTEND"
+          <img
+            className="d-block w-100 height-400 black-white-filter"
+            src="https://images.freeimages.com/images/large-previews/99c/laptop-computers-1236114.jpg"
+            alt="Backend"
           />
           <Carousel.Caption>
             <img
-              src={frontend}
+              src={plataformas}
+              className="w-fix-big white"
+              alt="backend"
+            />
+            <h2 className="tech-item color-green strong-text"><strong>&gt;</strong> backend</h2>
+            <p className="tech-description color-white">Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+            <div className="margin-small">
+              <img
+                src={django}
+                className="w-fix-little filter-black-and-white"
+                alt="Django"
+              />
+              <img
+                src={nodejs}
+                className="w-fix-little filter-black-and-white"
+                alt="Node"
+              />
+              <img
+                src={python}
+                className="w-fix-little filter-black-and-white"
+                alt="Python"
+              />
+              <img
+                src={php}
+                className="w-fix-little filter-black-and-white"
+                alt="Php"
+              />
+            </div>
+          </Carousel.Caption>
+        </Carousel.Item>
+        <Carousel.Item>
+          <section
+            className="w-100 height-400 background-gray-2"
+            alt="Frontend"
+          />
+          <Carousel.Caption>
+            <img
+              src={desing}
               className="w-fix-big white"
               alt="frontend"
             />
-            <h2 className="tech-item color-white">Frontend</h2>
-            <p className="tech-description">Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+            <h2 className="tech-item color-green strong-text"><strong>&gt;</strong> frontend</h2>
+            <p className="tech-description color-white">Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
             <div className="margin-small">
               <img
                 src={vue}
@@ -64,73 +99,53 @@ function Skills () {
         </Carousel.Item>
         <Carousel.Item>
           <img
-            className="d-block w-100 height-400 opacity"
-            src="https://images.freeimages.com/images/large-previews/99c/laptop-computers-1236114.jpg"
-            alt="Backend"
-          />
-          <Carousel.Caption>
-            <h2 className="tech-item">Backend</h2>
-            <p className="tech-description">Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-            <img
-              src={django}
-              className="w-fix-little"
-              alt="Django"
-            />
-            <img
-              src={nodejs}
-              className="w-fix-little"
-              alt="Node"
-            />
-            <img
-              src={python}
-              className="w-fix-little"
-              alt="Python"
-            />
-            <img
-              src={php}
-              className="w-fix-little"
-              alt="Php"
-            />
-          </Carousel.Caption>
-        </Carousel.Item>
-        <Carousel.Item>
-          <img
-            className="d-block w-100 height-400 opacity"
-            src="https://cdn.pixabay.com/photo/2015/09/05/20/02/coding-924920_960_720.jpg"
+            className="d-block w-100 height-400 black-white-filter opacity"
+            src="https://images.freeimages.com/images/large-previews/443/php-code-1242330.jpg"
             alt="Databases"
           />
           <Carousel.Caption>
-            <h2 className="tech-item">Databases</h2>
-            <p className="tech-description">Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
             <img
-              src={mysql}
-              className="w-fix-little"
-              alt="Mysql"
+              src={frontend}
+              className="w-fix-big white"
+              alt="backend"
             />
-            <img
-              src={mongo}
-              className="w-fix-little"
-              alt="Mongo"
-            />
-            <img
-              src={posgrest}
-              className="w-fix-little"
-              alt="Posgresql"
-            />
+            <h2 className="tech-item color-green strong-text"><strong>&gt;</strong> databases</h2>
+            <p className="tech-description color-white">Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+            <div className="margin-small">
+              <img
+                src={mysql}
+                className="w-fix-little filter-black-and-white"
+                alt="Mysql"
+              />
+              <img
+                src={mongo}
+                className="w-fix-little filter-black-and-white"
+                alt="Mongo"
+              />
+              <img
+                src={posgrest}
+                className="w-fix-little filter-black-and-white"
+                alt="Posgresql"
+              />
+            </div>
           </Carousel.Caption>
         </Carousel.Item>
         <Carousel.Item>
-          <img
-            className="d-block w-100 height-400 opacity"
-            src="https://images.freeimages.com/images/large-previews/99c/laptop-computers-1236114.jpg"
+          <section
+            className="w-100 height-400 background-gray-2"
             alt="Infrastructure"
           />
           <Carousel.Caption>
-            <h2 className="tech-item">Infrastructure</h2>
-            <p className="tech-description">Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+            <img
+              src={backend}
+              className="w-fix-big white"
+              alt="backend"
+            />
+            <h2 className="tech-item color-green strong-text"><strong>&gt;</strong> infrastructure</h2>
+            <p className="tech-description color-white">Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
             <img
               src={docker}
-              className="w-fix-little"
+              className="w-fix-little filter-black-and-white"
               alt="Docker"
             />
           </Carousel.Caption>

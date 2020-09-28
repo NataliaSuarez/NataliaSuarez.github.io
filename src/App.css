@@ -73,6 +73,7 @@
 
 .contact-list-item:hover {
   font-weight: 800;
+  color: #fafafa;
 }
 
 .App-link {
@@ -111,10 +112,10 @@
 
 .tech-description {
   /* color: #fafafa; */
-  color: #666666;
-  font-family: 'Poppins', sans-serif;
+  /* color: #666666; */
+  /* font-family: 'Poppins', sans-serif; */
   font-weight: 200;
-  font-style: italic;
+  /* font-style: italic; */
   margin: 0.3em;
   font-size: calc(9px + 1.7vmin);
 }
@@ -128,6 +129,9 @@
   /* height: 2.7em; */
   height: calc(9px + 5vmin);
   margin: 1vmin;
+}
+.black-white-filter{
+  filter: saturate(0%) brightness(25%);
 }
 .filter-black-and-white{
   filter: saturate(0%);
@@ -144,23 +148,37 @@
   color:#fafafa;
 }
 
-.background-green {
-  background: #049729;
+.background-gray-3 {
+  background: #0c0c0c;
 }
 
-.background-gray {
+.background-gray-2 {
+  background: #1d1c1c;
+}
+
+.background-gray-1 {
   background: #333;
+}
+
+.color-green {
+  color: #00b92e;
 }
 
 .color-gray {
   color: #242b33;
+}
+.color-gray-brightness {
+  color: #cecbcb;
 }
 
 .color-white {
   color: #fafafa;
 }
 .opacity {
-  opacity: 0.3;
+  opacity: 96%;
+}
+.strong-text{
+  font-weight: 500;
 }
 .without-padding-bottom{
   padding-bottom: 0;
