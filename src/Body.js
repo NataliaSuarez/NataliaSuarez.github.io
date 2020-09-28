@@ -5,7 +5,7 @@ import './App.css';
 
 function Body() {
   return (
-    <div className="App-body">
+    <div>
       <Experience />
       <Skills />
     </div>

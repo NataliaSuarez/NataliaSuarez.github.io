@@ -103,9 +103,9 @@
 
 .tech-item{
   color: #3d3d3d;
-  font-weight: 300;
+  font-weight: 400;
   margin-top: 0.3em;
-  /* font-size: larger; */
+  font-size: calc(10px + 3vmin);
   /* color: #049729; */
 }
 
@@ -116,19 +116,69 @@
   font-weight: 200;
   font-style: italic;
   margin: 0.3em;
+  font-size: calc(9px + 1.7vmin);
 }
 
 .height-400 {
-  height: calc(50px + 50vmin);
+  /* height: calc(30px + 130vmin); */
+  height: calc(30px + 78vmin);
 }
 
 .w-fix-little {
-  height: 3.4em;
-  margin: 0.3em;
+  /* height: 2.7em; */
+  height: calc(9px + 5vmin);
+  margin: 1vmin;
+}
+.filter-black-and-white{
+  filter: saturate(0%);
+}
+.filter-black-and-white:hover{
+  filter: saturate(100%);
 }
 
+.w-fix-big {
+  height: 27vmin;
+  margin: 0.3em;
+}
+.white {
+  color:#fafafa;
+}
+
+.background-green {
+  background: #049729;
+}
+
+.background-gray {
+  background: #333;
+}
+
+.color-gray {
+  color: #242b33;
+}
+
+.color-white {
+  color: #fafafa;
+}
 .opacity {
   opacity: 0.3;
+}
+.without-padding-bottom{
+  padding-bottom: 0;
+}
+.without-padding-bottom{
+  margin-bottom: 0;
+}
+.margin-small {
+  margin: 0.5em;
+}
+.padding-small{
+  padding: 1vmin;
+}
+.carousel-control-prev-icon {
+  display: none !important;
+}
+.carousel-control-next-icon {
+  display: none !important;
 }
 @media only screen and (min-width: 768px) {
   .App-header {
@@ -163,6 +213,11 @@
   .contact-list {
     flex-direction: row;
     justify-content: space-between;
+  }
+  .height-400 {
+    height: calc(20px + 60vmin);
+    /* height: calc(50px + 50vmin);
+    height: calc(40px + 60vmin); */
   }
 }
 

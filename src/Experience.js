@@ -3,7 +3,7 @@ import './App.css';
 
 function Experience() {
   return (
-    <div className="header-elem-box">
+    <div className="App-body header-elem-box">
       <div className="header-elem-box">
         <p className="title">
           <strong>&gt;</strong> experience
