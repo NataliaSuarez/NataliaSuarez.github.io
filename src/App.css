@@ -96,10 +96,15 @@
 }
 .exp-item {
   font-family: 'Poppins', sans-serif;
-  text-align: center;
+  /* text-align: center; */
   font-weight: 300;
-  font-size: calc(5px + 1vmin);
-  padding: 1vmin;
+  font-size: calc(7px + 1.7vmin);
+  /* padding: 1vmin; */
+}
+.exp-item-2 {
+  font-weight: 500;
+  font-size: calc(7px + 1.7vmin);
+  /* padding: 1vmin; */
 }
 
 .tech-item{
@@ -163,7 +168,9 @@
 .color-green {
   color: #00b92e;
 }
-
+.color-green-2 {
+  color: #039b30;
+}
 .color-gray {
   color: #242b33;
 }
@@ -191,6 +198,10 @@
 }
 .padding-small{
   padding: 1vmin;
+}
+
+.d-content {
+  display: contents;
 }
 
 /* bootstrap modifiers */

@@ -22,7 +22,7 @@ function Skills () {
   return (
     <div>
       <Carousel>
-        <Carousel.Item>
+        <Carousel.Item className="d-content">
           <img
             className="d-block w-100 height-400 black-white-filter"
             src="https://images.freeimages.com/images/large-previews/99c/laptop-computers-1236114.jpg"
