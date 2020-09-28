@@ -20,7 +20,7 @@ function Experience() {
           {
             experience.map(e => {
               return (
-                <TimelineItem key={e.id}>
+                <TimelineItem key={e.id} className="exp-card">
                   <TimelineOppositeContent>
                     <p color="textSecondary" className="App-link exp-item-3 color-gray">{e.date}</p>
                   </TimelineOppositeContent>
