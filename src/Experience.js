@@ -22,7 +22,7 @@ function Experience() {
               return (
                 <TimelineItem key={e.id}>
                   <TimelineOppositeContent>
-                    <p color="textSecondary" className="App-link exp-item color-gray">{e.date}</p>
+                    <p color="textSecondary" className="App-link exp-item-3 color-gray">{e.date}</p>
                   </TimelineOppositeContent>
                   <TimelineSeparator>
                     <TimelineDot variant="outlined"/>
@@ -31,7 +31,7 @@ function Experience() {
                   <TimelineContent>
                     <p className="App-link color-green-2 exp-item-2"><strong>{e.position}</strong></p>
                     <p className="App-link color-gray exp-item"><strong>{e.name}</strong></p>
-                    <p className="App-link color-gray exp-item-2">
+                    <p className="App-link color-gray-intermediate exp-item-2">
                       { e.tech.map(t=> <span key={t.toString()}> {t.toString()} </span>) }
                     </p>
                   </TimelineContent>

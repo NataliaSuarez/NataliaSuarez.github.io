@@ -107,6 +107,10 @@
   font-size: calc(7px + 1.7vmin);
   /* padding: 1vmin; */
 }
+.exp-item-3{
+  font-family: 'Poppins', sans-serif;
+  font-size: calc(7px + 1.7vmin);
+}
 
 .tech-item{
   color: #3d3d3d;
@@ -174,6 +178,9 @@
 }
 .color-gray {
   color: #242b33;
+}
+.color-gray-intermediate {
+  color: #888787;
 }
 .color-gray-brightness {
   color: #cecbcb;
@@ -256,6 +263,9 @@
     height: calc(20px + 60vmin);
     /* height: calc(50px + 50vmin);
     height: calc(40px + 60vmin); */
+  }
+  .exp-item-3{
+    font-size: calc(3px + 1vmin);
   }
 }
 
