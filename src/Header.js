@@ -1,12 +1,13 @@
 import React from 'react';
-import fire from './fire_white.svg';
+// import fire from './fire_white.svg';
+import creatividad from './desing/creatividad.svg';
 import './App.css';
 
 function Header() {
   return (
     <div className="App-header">
       <div className="header-contact-info">
-        <img src={fire} className="App-logo" alt="logo" />
+        <img src={creatividad} className="App-logo" alt="logo" />
         <div className="contact-list">
           <a
           className="App-link contact-list-item"
