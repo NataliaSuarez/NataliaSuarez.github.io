@@ -119,11 +119,11 @@
     justify-content: flex-start;
   }
   .App-logo {
-    height: calc(7px + 23vmin);
+    height: calc(8px + 23vmin);
     align-self: flex-start;
     margin-bottom: 0.2em;
-    margin-left: 6vmin;
-    margin-right: 8vmin;
+    margin-left: 3.5vmin;
+    margin-right: 4.5vmin;
   }
   .App-link {
     font-size: calc(4px + 1vmin);
@@ -134,7 +134,7 @@
     justify-content: space-around;
   }
   .App-body {
-    flex-direction: row;
+    /* flex-direction: row; */
     justify-content: flex-start;
   }
   .header-elem-box {
