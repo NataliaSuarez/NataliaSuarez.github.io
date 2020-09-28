@@ -4,8 +4,9 @@
 }
 
 .App-logo {
-  height: 30vmin;
+  height: 25vmin;
   align-self: center;
+  margin-bottom: 0.5em;
 }
 
 .App-header {
@@ -20,6 +21,11 @@
   padding: 1em;
 }
 
+.header-contact-info {
+  display: flex;
+  flex-direction: row;
+}
+
 @media only screen and (min-width: 768px) {
   .App-header {
     flex-direction: row;
@@ -28,9 +34,13 @@
   .App-logo {
     align-self: flex-start;
   }
+  .header-contact-info {
+    display: flex;
+    flex-direction: column;
+  }
 }
 .header-elem-box {
-  padding: 0.5em;
+  padding: 0.5vmin;
 }
 .header-elem-box p {
   margin: 0;
@@ -38,17 +48,35 @@
 .title {
   font-weight: 600;
   color: #039b30;
+  padding-bottom: 1vmin;
 }
 
 .description {
   font-weight: 200;
   font-size: calc(5px + 1.5vmin);
   font-style: italic;
+  padding: 1vmin;
 }
+
+.description:hover {
+  font-weight: 800;
+}
+
 .contact-list{
   display: flex;
   flex-direction: column;
+  justify-content: space-evenly;
 }
+
+.contact-list-item {
+  inline-size: max-content;
+  text-decoration: unset;
+}
+
+.contact-list-item:hover {
+  font-weight: 800;
+}
+
 .App-link {
   color: #039b30;
   font-weight: 200;
