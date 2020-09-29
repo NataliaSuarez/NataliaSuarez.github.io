@@ -1,5 +1,7 @@
 import React from 'react';
 import { Carousel } from 'react-bootstrap';
+import keyboard from './imgs/keyboard.jpg';
+import code from './imgs/code.jpg';
 import vue from './imgs/vue.webp';
 import react from './imgs/react.png';
 import html5 from './imgs/html-5.svg';
@@ -22,10 +24,10 @@ function Skills () {
   return (
     <div>
       <Carousel>
-        <Carousel.Item className="d-content">
+        <Carousel.Item>
           <img
             className="d-block w-100 height-400 black-white-filter"
-            src="https://images.freeimages.com/images/large-previews/99c/laptop-computers-1236114.jpg"
+            src={keyboard}
             alt="Backend"
           />
           <Carousel.Caption>
@@ -99,8 +101,8 @@ function Skills () {
         </Carousel.Item>
         <Carousel.Item>
           <img
-            className="d-block w-100 height-400 black-white-filter opacity"
-            src="https://images.freeimages.com/images/large-previews/443/php-code-1242330.jpg"
+            className="d-block w-100 height-400 black-white-filter"
+            src={code}
             alt="Databases"
           />
           <Carousel.Caption>
