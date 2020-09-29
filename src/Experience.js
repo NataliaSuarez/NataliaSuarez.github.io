@@ -13,7 +13,7 @@ function Experience() {
   return (
     <div className="App-body header-elem-box">
       <div className="header-elem-box">
-        <p className="title">
+        <p className="title color-green-2">
           <strong>&gt;</strong> experience
         </p>
         <Timeline align="alternate">

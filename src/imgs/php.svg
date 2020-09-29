@@ -7,14 +7,14 @@
    xmlns="http://www.w3.org/2000/svg"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   width="256px"
-   height="135px"
-   viewBox="0 0 256 135"
+   width="199"
+   height="105"
+   viewBox="0 0 199 105"
    version="1.1"
    preserveAspectRatio="xMidYMid"
    id="svg31"
    sodipodi:docname="php.svg"
-   inkscape:version="0.92.3 (2405546, 2018-03-11)">
+   inkscape:version="0.92.4 (5da689c313, 2019-01-14)">
   <metadata
      id="metadata35">
     <rdf:RDF>
@@ -36,24 +36,24 @@
      guidetolerance="10"
      inkscape:pageopacity="0"
      inkscape:pageshadow="2"
-     inkscape:window-width="640"
-     inkscape:window-height="480"
+     inkscape:window-width="1920"
+     inkscape:window-height="1016"
      id="namedview33"
      showgrid="false"
      inkscape:zoom="1.4609375"
-     inkscape:cx="128"
+     inkscape:cx="129.36898"
      inkscape:cy="67.5"
      inkscape:window-x="0"
      inkscape:window-y="27"
-     inkscape:window-maximized="0"
+     inkscape:window-maximized="1"
      inkscape:current-layer="svg31" />
   <defs
      id="defs9">
     <radialGradient
        id="radialGradient-1"
-       cx="0.8366"
+       cx="0.83660001"
        cy="-125.811"
-       r="363.0565"
+       r="363.05649"
        gradientTransform="matrix(0.463,0,0,0.463,76.4644,81.9182)"
        gradientUnits="userSpaceOnUse">
       <stop
@@ -72,7 +72,7 @@
   </defs>
   <g
      id="g29"
-     transform="matrix(0.77624335,0,0,0.77624335,28.640852,15.058824)">
+     transform="matrix(0.77624335,0,0,0.77624335,0.1408512,0.25882018)">
     <ellipse
        cx="128"
        cy="67.300003"

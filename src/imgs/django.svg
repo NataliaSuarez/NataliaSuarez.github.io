@@ -11,14 +11,15 @@
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    version="1.0"
    id="Layer_1"
-   width="436.505"
-   height="152.503"
-   viewBox="0 0 436.505 152.503"
+   width="290"
+   height="102"
+   viewBox="0 0 290 102"
    overflow="visible"
    enable-background="new 0 0 436.505 152.503"
    xml:space="preserve"
-   sodipodi:docname="django-logo-positive.svg"
-   inkscape:version="0.92.3 (2405546, 2018-03-11)"><metadata
+   sodipodi:docname="django.svg"
+   inkscape:version="0.92.4 (5da689c313, 2019-01-14)"
+   style="overflow:visible"><metadata
    id="metadata23"><rdf:RDF><cc:Work
        rdf:about=""><dc:format>image/svg+xml</dc:format><dc:type
          rdf:resource="http://purl.org/dc/dcmitype/StillImage" /><dc:title></dc:title></cc:Work></rdf:RDF></metadata><defs
@@ -31,20 +32,20 @@
    guidetolerance="10"
    inkscape:pageopacity="0"
    inkscape:pageshadow="2"
-   inkscape:window-width="640"
-   inkscape:window-height="480"
+   inkscape:window-width="1920"
+   inkscape:window-height="1016"
    id="namedview19"
    showgrid="false"
    inkscape:zoom="0.85680575"
-   inkscape:cx="218.2525"
+   inkscape:cx="220.58675"
    inkscape:cy="76.251503"
    inkscape:window-x="0"
    inkscape:window-y="27"
-   inkscape:window-maximized="0"
+   inkscape:window-maximized="1"
    inkscape:current-layer="Layer_1" />
 <g
    id="g16"
-   transform="matrix(0.66326437,0,0,0.66326437,73.493392,25.676765)">
+   transform="matrix(0.66326437,0,0,0.66326437,0.24089309,0.42476526)">
 	<g
    id="g14">
 		<path

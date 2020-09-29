@@ -1,13 +1,12 @@
 import React from 'react';
-// import fire from './fire_white.svg';
-import creatividad from './desing/creatividad.svg';
+import fire from './fire_white.svg';
 import './App.css';
 
 function Header() {
   return (
-    <div className="App-header">
+    <div className="App-header background-gray-3">
       <div className="header-contact-info">
-        <img src={creatividad} className="App-logo" alt="logo" />
+        <img src={fire} className="App-logo" alt="logo" />
         <div className="contact-list">
           <a
           className="App-link contact-list-item"
@@ -45,10 +44,10 @@ function Header() {
       </div>
       <div className="header-elem-box">
         <p className="title-header">
-          nat | fullstack developer
+          nat | developer & art-curious
         </p>
         <p className="description">
-          Resume project develop with React. 
+        Web about the projects in which I have participated, my interests and deep unknowledge. 
         </p>
       </div>
     </div>

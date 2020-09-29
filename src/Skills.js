@@ -12,12 +12,8 @@ import nodejs from './imgs/nodejs.svg';
 import php from './imgs/php.svg';
 import mongo from './imgs/mongo.svg';
 import mysql from './imgs/mysql.png';
-import posgrest from './imgs/posgresql.png';
+import posgrest from './imgs/posgresql.svg';
 import docker from './imgs/docker.svg';
-import frontend from './desing/frontend.svg';
-import backend from './desing/backend.svg';
-import plataformas from './desing/plataformas-online.svg';
-import desing from './desing/ui-ux-design.svg';
 import './App.css';
 
 function Skills () {
@@ -31,32 +27,27 @@ function Skills () {
             alt="Backend"
           />
           <Carousel.Caption>
-            <img
-              src={plataformas}
-              className="w-fix-big white"
-              alt="backend"
-            />
             <h2 className="tech-item color-green strong-text"><strong>&gt;</strong> backend</h2>
-            <p className="tech-description color-white">Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+            <p className="tech-description color-white">Symfony, Django, Feathers.js | Javascript, Python, PHP, Java</p>
             <div className="margin-small">
               <img
                 src={django}
-                className="w-fix-little filter-black-and-white"
+                className="w-fix-little"
                 alt="Django"
               />
               <img
                 src={nodejs}
-                className="w-fix-little filter-black-and-white"
+                className="w-fix-little"
                 alt="Node"
               />
               <img
                 src={python}
-                className="w-fix-little filter-black-and-white"
+                className="w-fix-little"
                 alt="Python"
               />
               <img
                 src={php}
-                className="w-fix-little filter-black-and-white"
+                className="w-fix-little"
                 alt="Php"
               />
             </div>
@@ -68,32 +59,27 @@ function Skills () {
             alt="Frontend"
           />
           <Carousel.Caption>
-            <img
-              src={desing}
-              className="w-fix-big white"
-              alt="frontend"
-            />
             <h2 className="tech-item color-green strong-text"><strong>&gt;</strong> frontend</h2>
-            <p className="tech-description color-white">Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+            <p className="tech-description color-white">Vue, React, Vue Native Script | Flux</p>
             <div className="margin-small">
               <img
                 src={vue}
-                className="w-fix-little filter-black-and-white"
+                className="w-fix-little"
                 alt="Vue"
               />
               <img
                 src={react}
-                className="w-fix-little filter-black-and-white"
+                className="w-fix-little"
                 alt="React"
               />
               <img
                 src={html5}
-                className="w-fix-little filter-black-and-white"
+                className="w-fix-little"
                 alt="Html"
               />
               <img
                 src={bootstrap}
-                className="w-fix-little filter-black-and-white"
+                className="w-fix-little"
                 alt="Bootstrap"
               />
             </div>
@@ -106,27 +92,22 @@ function Skills () {
             alt="Databases"
           />
           <Carousel.Caption>
-            <img
-              src={frontend}
-              className="w-fix-big white"
-              alt="backend"
-            />
             <h2 className="tech-item color-green strong-text"><strong>&gt;</strong> databases</h2>
-            <p className="tech-description color-white">Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+            <p className="tech-description color-white">Mysql, MongoDB, PosgresSQL</p>
             <div className="margin-small">
               <img
                 src={mysql}
-                className="w-fix-little filter-black-and-white"
+                className="w-fix-little"
                 alt="Mysql"
               />
               <img
                 src={mongo}
-                className="w-fix-little filter-black-and-white"
+                className="w-fix-little"
                 alt="Mongo"
               />
               <img
                 src={posgrest}
-                className="w-fix-little filter-black-and-white"
+                className="w-fix-little"
                 alt="Posgresql"
               />
             </div>
@@ -138,16 +119,11 @@ function Skills () {
             alt="Infrastructure"
           />
           <Carousel.Caption>
-            <img
-              src={backend}
-              className="w-fix-big white"
-              alt="backend"
-            />
             <h2 className="tech-item color-green strong-text"><strong>&gt;</strong> infrastructure</h2>
-            <p className="tech-description color-white">Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+            <p className="tech-description color-white">Docker, docker-compose, bash, git</p>
             <img
               src={docker}
-              className="w-fix-little filter-black-and-white"
+              className="w-fix-little"
               alt="Docker"
             />
           </Carousel.Caption>
