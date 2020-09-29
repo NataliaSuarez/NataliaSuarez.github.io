@@ -1,0 +1,41 @@
+{
+  "files": {
+    "main.css": "/static/css/main.d64e9409.chunk.css",
+    "main.js": "/static/js/main.4589c773.chunk.js",
+    "main.js.map": "/static/js/main.4589c773.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.3bbf3189.js",
+    "runtime-main.js.map": "/static/js/runtime-main.3bbf3189.js.map",
+    "static/css/2.11829350.chunk.css": "/static/css/2.11829350.chunk.css",
+    "static/js/2.f1a26180.chunk.js": "/static/js/2.f1a26180.chunk.js",
+    "static/js/2.f1a26180.chunk.js.map": "/static/js/2.f1a26180.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.73c67b98aa83347cd4162ceec617cefd.js": "/precache-manifest.73c67b98aa83347cd4162ceec617cefd.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/2.11829350.chunk.css.map": "/static/css/2.11829350.chunk.css.map",
+    "static/css/main.d64e9409.chunk.css.map": "/static/css/main.d64e9409.chunk.css.map",
+    "static/js/2.f1a26180.chunk.js.LICENSE.txt": "/static/js/2.f1a26180.chunk.js.LICENSE.txt",
+    "static/media/backend.svg": "/static/media/backend.7150fccb.svg",
+    "static/media/bootstrap.svg": "/static/media/bootstrap.1189846e.svg",
+    "static/media/creatividad.svg": "/static/media/creatividad.02681843.svg",
+    "static/media/django.svg": "/static/media/django.8b309ee9.svg",
+    "static/media/docker.svg": "/static/media/docker.b23dc2ee.svg",
+    "static/media/frontend.svg": "/static/media/frontend.21d7be19.svg",
+    "static/media/html-5.svg": "/static/media/html-5.2c185be1.svg",
+    "static/media/mongo.svg": "/static/media/mongo.a17e7fac.svg",
+    "static/media/nodejs.svg": "/static/media/nodejs.084b5fed.svg",
+    "static/media/php.svg": "/static/media/php.4f214e14.svg",
+    "static/media/plataformas-online.svg": "/static/media/plataformas-online.9c5826cb.svg",
+    "static/media/posgresql.png": "/static/media/posgresql.e571c9c7.png",
+    "static/media/python.svg": "/static/media/python.98d19974.svg",
+    "static/media/react.png": "/static/media/react.a7212ed4.png",
+    "static/media/ui-ux-design.svg": "/static/media/ui-ux-design.cab3de2d.svg",
+    "static/media/vue.webp": "/static/media/vue.bdaff7a4.webp"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.3bbf3189.js",
+    "static/css/2.11829350.chunk.css",
+    "static/js/2.f1a26180.chunk.js",
+    "static/css/main.d64e9409.chunk.css",
+    "static/js/main.4589c773.chunk.js"
+  ]
+}

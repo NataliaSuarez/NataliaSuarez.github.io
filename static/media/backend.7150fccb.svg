@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="2945.062 2760.5 123.396 106.408">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fafafa;
+      }
+
+      .cls-2, .cls-3 {
+        fill: none;
+        stroke: #fafafa;
+        stroke-linecap: round;
+        stroke-width: 2px;
+      }
+
+      .cls-2 {
+        stroke-linejoin: round;
+        stroke-miterlimit: 10;
+      }
+    </style>
+  </defs>
+  <g id="ILUSTRACION_BACK" transform="translate(2352.062 -69.848)">
+    <g id="Group_1208" data-name="Group 1208" transform="translate(594 2831.348)">
+      <g id="Group_1207" data-name="Group 1207" transform="translate(0 0)">
+        <g id="Group_1206" data-name="Group 1206" transform="translate(0 6.795)">
+          <g id="Group_1203" data-name="Group 1203" transform="translate(8.452 10.772)">
+            <ellipse id="Ellipse_186" data-name="Ellipse 186" class="cls-1" cx="1.989" cy="2.072" rx="1.989" ry="2.072"/>
+            <ellipse id="Ellipse_187" data-name="Ellipse 187" class="cls-1" cx="1.989" cy="2.072" rx="1.989" ry="2.072" transform="translate(8.535)"/>
+            <ellipse id="Ellipse_188" data-name="Ellipse 188" class="cls-1" cx="1.989" cy="2.072" rx="1.989" ry="2.072" transform="translate(17.07)"/>
+          </g>
+          <path id="Path_1078" data-name="Path 1078" class="cls-2" d="M100.937,35.388H9.786A8.311,8.311,0,0,1,1.5,27.1V17.986A8.311,8.311,0,0,1,9.786,9.7h91.15a8.311,8.311,0,0,1,8.286,8.286V27.1A8.311,8.311,0,0,1,100.937,35.388Z" transform="translate(-1.5 -9.7)"/>
+          <path id="Path_1079" data-name="Path 1079" class="cls-3" d="M0,0H13.673" transform="translate(107.723 12.844)"/>
+          <g id="Group_1204" data-name="Group 1204" transform="translate(8.452 43.338)">
+            <ellipse id="Ellipse_189" data-name="Ellipse 189" class="cls-1" cx="1.989" cy="2.072" rx="1.989" ry="2.072"/>
+            <ellipse id="Ellipse_190" data-name="Ellipse 190" class="cls-1" cx="1.989" cy="2.072" rx="1.989" ry="2.072" transform="translate(8.535)"/>
+            <ellipse id="Ellipse_191" data-name="Ellipse 191" class="cls-1" cx="1.989" cy="2.072" rx="1.989" ry="2.072" transform="translate(17.07)"/>
+          </g>
+          <path id="Path_1080" data-name="Path 1080" class="cls-2" d="M100.937,74.688H9.786A8.311,8.311,0,0,1,1.5,66.4V57.286A8.311,8.311,0,0,1,9.786,49h91.15a8.311,8.311,0,0,1,8.286,8.286V66.4A8.311,8.311,0,0,1,100.937,74.688Z" transform="translate(-1.5 -16.435)"/>
+          <path id="Path_1081" data-name="Path 1081" class="cls-3" d="M0,0H13.673" transform="translate(107.723 45.409)"/>
+          <g id="Group_1205" data-name="Group 1205" transform="translate(8.452 75.903)">
+            <ellipse id="Ellipse_192" data-name="Ellipse 192" class="cls-1" cx="1.989" cy="2.072" rx="1.989" ry="2.072"/>
+            <ellipse id="Ellipse_193" data-name="Ellipse 193" class="cls-1" cx="1.989" cy="2.072" rx="1.989" ry="2.072" transform="translate(8.535)"/>
+            <ellipse id="Ellipse_194" data-name="Ellipse 194" class="cls-1" cx="1.989" cy="2.072" rx="1.989" ry="2.072" transform="translate(17.07)"/>
+          </g>
+          <path id="Path_1082" data-name="Path 1082" class="cls-2" d="M100.937,113.988H9.786A8.311,8.311,0,0,1,1.5,105.7V96.586A8.311,8.311,0,0,1,9.786,88.3h91.15a8.311,8.311,0,0,1,8.286,8.286V105.7A8.311,8.311,0,0,1,100.937,113.988Z" transform="translate(-1.5 -23.169)"/>
+          <path id="Path_1083" data-name="Path 1083" class="cls-3" d="M0,0H13.673" transform="translate(107.723 77.975)"/>
+        </g>
+        <path id="Path_1084" data-name="Path 1084" class="cls-3" d="M0,0V104.408" transform="translate(121.395)"/>
+      </g>
+    </g>
+  </g>
+</svg>

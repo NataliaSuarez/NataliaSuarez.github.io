@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="2943.99 2511.322 125.893 76.667">
+  <defs>
+    <style>
+      .cls-1, .cls-3, .cls-4 {
+        fill: none;
+        stroke: #fafafa;
+        stroke-width: 2px;
+      }
+
+      .cls-1, .cls-4 {
+        stroke-linecap: round;
+      }
+
+      .cls-1 {
+        stroke-linejoin: round;
+        stroke-miterlimit: 10;
+      }
+
+      .cls-2 {
+        fill: #fafafa;
+      }
+    </style>
+  </defs>
+  <g id="ILUSTRACION_FRONT" transform="translate(2627.467 -328.348)">
+    <g id="Group_1201" data-name="Group 1201" transform="translate(317.523 2840.67)">
+      <g id="Group_1200" data-name="Group 1200" transform="translate(0)">
+        <path id="Path_1071" data-name="Path 1071" class="cls-1" d="M12.4,64.425V8.876A7.373,7.373,0,0,1,19.7,1.5h92.882a7.373,7.373,0,0,1,7.3,7.376V64.425" transform="translate(-4.196 -1.5)"/>
+        <path id="Path_1072" data-name="Path 1072" class="cls-1" d="M125.393,85.1v4.366a7.373,7.373,0,0,1-7.3,7.376H8.8a7.373,7.373,0,0,1-7.3-7.376V85.1Z" transform="translate(-1.5 -22.175)"/>
+        <path id="Path_1073" data-name="Path 1073" class="cls-1" d="M93.427,85.1a4.884,4.884,0,0,1-4.817,4.817H69.642A4.787,4.787,0,0,1,64.9,85.1" transform="translate(-17.179 -22.175)"/>
+        <ellipse id="Ellipse_183" data-name="Ellipse 183" class="cls-2" cx="1.204" cy="1.204" rx="1.204" ry="1.204" transform="translate(13.849 3.763)"/>
+        <ellipse id="Ellipse_184" data-name="Ellipse 184" class="cls-2" cx="1.204" cy="1.204" rx="1.204" ry="1.204" transform="translate(18.817 3.763)"/>
+        <ellipse id="Ellipse_185" data-name="Ellipse 185" class="cls-2" cx="1.204" cy="1.204" rx="1.204" ry="1.204" transform="translate(23.71 3.763)"/>
+        <path id="Path_1074" data-name="Path 1074" class="cls-3" d="M0,0H107.484" transform="translate(8.204 9.183)"/>
+        <g id="Group_1199" data-name="Group 1199" transform="translate(36.054 25.441)">
+          <path id="Path_1075" data-name="Path 1075" class="cls-1" d="M62.422,42.7,49.4,47.743l13.022,5.043" transform="translate(-49.4 -37.13)"/>
+          <path id="Path_1076" data-name="Path 1076" class="cls-1" d="M100.9,42.7l13.022,5.043L100.9,52.786" transform="translate(-62.136 -37.13)"/>
+          <path id="Path_1077" data-name="Path 1077" class="cls-4" d="M6.022,0,0,21.3" transform="translate(22.882)"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>
