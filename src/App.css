@@ -264,7 +264,36 @@
   left: 5% !important;
   bottom: 15vmin !important;
 }
-
+.MuiTimeline-root{
+  display: flex !important;
+  padding: 0 !important;
+  flex-grow: unset !important;
+  flex-direction: column !important;
+}
+.MuiAccordion-root {
+  position: inherit !important;
+}
+.MuiAccordionSummary-content {
+  display: revert !important;
+}
+  .MuiAccordionSummary-root {
+  display: contents !important;
+  padding: none !important;
+  min-height: none !important;
+}
+.MuiAccordionBase-root {
+  position: none !important;
+  align-items: none !important;
+  justify-content: none !important;
+}
+.MuiPaper-elevation1 {
+  box-shadow: none !important;
+  background-color: unset !important;
+}
+.MuiCollapse-entered, .MuiCollapse-container {
+  padding-left: 3vmin !important;
+  padding-right: 3vmin !important;
+}
 /* media desktop modifiers */
 @media only screen and (min-width: 768px) {
   .App-header {
@@ -307,6 +336,10 @@
   }
   .exp-item-3{
     font-size: calc(3px + 1vmin);
+  }
+  .MuiCollapse-entered, .MuiCollapse-container {
+    padding-left: 30vmin !important;
+    padding-right: 30vmin !important;
   }
 }
 

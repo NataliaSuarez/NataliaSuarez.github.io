@@ -10,7 +10,6 @@ function Footer() {
   >
     <div className="padding-large column">
       <img src={hands} className="App-logo padding-small" alt="logo" />
-      <p className="color-white">&gt; share with me new funny projects, tech challenges & new knowledges :)</p>
       <a
         className="color-white contact-list-item-centered"
         href="https://www.linkedin.com/in/natalia-suarez-dev/"
@@ -43,6 +42,7 @@ function Footer() {
       >
         + nat@dev
       </a>
+      <p className="color-white">&gt; share with me new funny projects, tech challenges & new knowledges :)</p>
     </div>
   </section>
   );

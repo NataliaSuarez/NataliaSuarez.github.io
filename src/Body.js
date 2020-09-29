@@ -1,7 +1,6 @@
 import React from 'react';
 import Skills from './Skills';
 import Experience from './Experience';
-import hands from './desing/hands-azar.svg';
 import './App.css';
 
 function Body() {
@@ -23,7 +22,7 @@ function Body() {
               I'm also interested in art, free software & technical challenges. That's why I'm playing with Hydra, GTP-2 and other art-tech tools.
             </p>
           </div>
-          <img src={hands} className="App-logo aling-centered" alt="logo" />
+          {/* <img src={hands} className="App-logo aling-centered" alt="logo" /> */}
         </div>
       </div>
       <Experience />
