@@ -1,5 +1,4 @@
-# webpage
-Web site with experience, works an tutorials
+# resume
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
