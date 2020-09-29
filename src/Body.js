@@ -24,46 +24,6 @@ function Body() {
       </div>
       <Experience />
       <Skills />
-      <section
-        className="background-gray-3"
-        alt="Frontend"
-      >
-        <div className="padding-large column">
-          <p className="color-white">&gt; share with me new funny projects, tech challenges & new knowledges :)</p>
-          <a
-            className="color-white contact-list-item-centered"
-            href="https://www.linkedin.com/in/natalia-suarez-dev/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            + linkedin
-          </a>
-          <a
-            className="color-white contact-list-item-centered"
-            href="https://github.com/NataliaSuarez"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            + github
-          </a>
-          <a
-            className="color-white contact-list-item-centered"
-            href="https://twitter.com/natsuarez42"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            + twitter
-          </a>
-          <a
-            className="color-white contact-list-item-centered"
-            href="mailto:suarez.nataliam@gmail.com"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            + nat@dev
-          </a>
-        </div>
-      </section>
     </div>
   )
 }
