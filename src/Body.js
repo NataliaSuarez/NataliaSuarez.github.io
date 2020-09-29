@@ -19,7 +19,7 @@ function Body() {
               I think collective projects are a wonderful way to work in groups of people where we can share experiences and knowledge.
             </p>
             <p className="exp-item-reg text-console padding-small color-gray-strong">
-              I'm also interested in art, free software & technical challenges. That's why I'm playing with Hydra, GTP-2 and other art-tech tools.
+              I'm also interested in art, free software & technical challenges. That's why I'm playing with <a href="https://hydra.ojack.xyz/" className="color-gray-strong color-gray-strong-link">Hydra</a>, <a href="https://minimaxir.com/2020/01/twitter-gpt2-bot/" className="color-gray-strong color-gray-strong-link">GTP-2</a> and other art-tech tools.
             </p>
           </div>
           {/* <img src={hands} className="App-logo aling-centered" alt="logo" /> */}

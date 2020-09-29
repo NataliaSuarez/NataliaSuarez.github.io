@@ -222,6 +222,10 @@
 .color-gray-strong {
   color: #333;
 }
+.color-gray-strong-link:hover {
+  color: #333;
+  font-weight: 600;
+}
 
 .color-white {
   color: #fafafa;
