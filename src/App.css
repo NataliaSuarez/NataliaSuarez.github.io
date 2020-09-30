@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&display=swap');
+
 .App {
   font-family: 'Fira Code', monospace;
   text-align: left;
@@ -48,7 +50,6 @@
 }
 
 .description {
-  font-family: 'Poppins', sans-serif;
   font-weight: 300;
   font-size: calc(6px + 1.5vmin);
   font-style: italic;
@@ -106,7 +107,6 @@
   padding: 1em;
 }
 .exp-item {
-  font-family: 'Poppins', sans-serif;
   /* text-align: center; */
   font-weight: 300;
   font-size: calc(7px + 1.7vmin);
@@ -118,7 +118,6 @@
   /* padding: 1vmin; */
 }
 .exp-item-3{
-  font-family: 'Poppins', sans-serif;
   font-size: calc(7px + 1.7vmin);
 }
 .exp-item-reg {
@@ -155,7 +154,6 @@
 .tech-description {
   /* color: #fafafa; */
   /* color: #666666; */
-  /* font-family: 'Poppins', sans-serif; */
   font-weight: 200;
   /* font-style: italic; */
   margin: 0.3em;
@@ -346,6 +344,3 @@
     padding-right: 30vmin !important;
   }
 }
-
-@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,900;1,100;1,200;1,300;1,400;1,500;1,900&display=swap');
