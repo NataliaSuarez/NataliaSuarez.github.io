@@ -6,7 +6,7 @@ function Header() {
   return (
     <div className="background-gray-3 column justify-start color-white padding-v-small fz-1">
       <div className="row-custom justify-s-around">
-        <img src={fire} className="height-50 align-center margin-b-small" alt="logo" />
+        <img src={fire} className="height-30 align-center margin-b-small" alt="logo" />
         <div className="column justify-s-around padding-vmin-v-small">
           <a
             className="color-white fz-1 strong-text link-item align-f-end"

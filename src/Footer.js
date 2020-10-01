@@ -9,7 +9,7 @@ function Footer() {
     alt="Frontend"
   >
     <div className="padding-large column">
-      <img src={hands} className="height-50 align-center margin-b-small" alt="logo" />
+      <img src={hands} className="height-30 align-center margin-b-small" alt="logo" />
       <a
         className="color-white strong-text link-item align-init"
         href="https://www.linkedin.com/in/natalia-suarez-dev/"

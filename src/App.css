@@ -183,8 +183,8 @@
 .height-400 {
   height: calc(30px + 78vmin);
 }
-.height-50{
-  height: 50vmin;
+.height-30{
+  height: 30vmin;
 }
 .w-fix-little {
   max-width:100%;
