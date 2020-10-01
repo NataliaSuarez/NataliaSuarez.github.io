@@ -4,49 +4,49 @@ import './App.css';
 
 function Header() {
   return (
-    <div className="App-header background-gray-3">
-      <div className="header-contact-info">
-        <img src={fire} className="App-logo" alt="logo" />
-        <div className="contact-list">
+    <div className="background-gray-3 column justify-start color-white padding-v-small fz-1">
+      <div className="row-custom justify-s-around">
+        <img src={fire} className="height-50 align-center margin-b-small" alt="logo" />
+        <div className="column justify-s-around padding-vmin-v-small">
           <a
-          className="App-link contact-list-item"
-          href="https://www.linkedin.com/in/natalia-suarez-dev/"
-          target="_blank"
-          rel="noopener noreferrer"
+            className="color-white fz-1 strong-text link-item align-f-end"
+            href="https://www.linkedin.com/in/natalia-suarez-dev/"
+            target="_blank"
+            rel="noopener noreferrer"
           >
-          linkedin
+            linkedin
           </a>
           <a
-          className="App-link contact-list-item"
-          href="https://github.com/NataliaSuarez"
-          target="_blank"
-          rel="noopener noreferrer"
+            className="color-white fz-1 strong-text link-item align-f-end"
+            href="https://github.com/NataliaSuarez"
+            target="_blank"
+            rel="noopener noreferrer"
           >
-          github
+            github
           </a>
           <a
-          className="App-link contact-list-item"
-          href="https://twitter.com/natsuarez42"
-          target="_blank"
-          rel="noopener noreferrer"
+            className="color-white fz-1 strong-text link-item align-f-end"
+            href="https://twitter.com/natsuarez42"
+            target="_blank"
+            rel="noopener noreferrer"
           >
-          twitter
+            twitter
           </a>
           <a
-          className="App-link contact-list-item"
-          href="mailto:suarez.nataliam@gmail.com"
-          target="_blank"
-          rel="noopener noreferrer"
+            className="color-white fz-1 strong-text link-item align-f-end"
+            href="mailto:suarez.nataliam@gmail.com"
+            target="_blank"
+            rel="noopener noreferrer"
           >
-          nat@dev
+            nat@dev
           </a>
         </div>
       </div>
-      <div className="header-elem-box">
-        <p className="title-header">
+      <div className="padding-vmin-v-small justify-s-between">
+        <p className="without-margin strong-1-text padding-b-small color-white fz-1 t-align-center">
           nat | developer & art-curious
         </p>
-        <p className="description">
+        <p className="without-margin light-300-text fz-4 italic t-align-center padding-small">
         Web about the projects in which I have participated, my interests and deep unknowledge. 
         </p>
       </div>

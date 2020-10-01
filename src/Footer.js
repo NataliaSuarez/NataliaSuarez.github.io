@@ -11,7 +11,7 @@ function Footer() {
     <div className="padding-large column">
       <img src={hands} className="App-logo padding-small" alt="logo" />
       <a
-        className="color-white contact-list-item-centered"
+        className="color-white strong-text link-item align-init"
         href="https://www.linkedin.com/in/natalia-suarez-dev/"
         target="_blank"
         rel="noopener noreferrer"
@@ -19,7 +19,7 @@ function Footer() {
         + linkedin
       </a>
       <a
-        className="color-white contact-list-item-centered"
+        className="color-white strong-text link-item align-init"
         href="https://github.com/NataliaSuarez"
         target="_blank"
         rel="noopener noreferrer"
@@ -27,7 +27,7 @@ function Footer() {
         + github
       </a>
       <a
-        className="color-white contact-list-item-centered"
+        className="color-white strong-text link-item align-init"
         href="https://twitter.com/natsuarez42"
         target="_blank"
         rel="noopener noreferrer"
@@ -35,7 +35,7 @@ function Footer() {
         + twitter
       </a>
       <a
-        className="color-white contact-list-item-centered"
+        className="color-white strong-text link-item align-init"
         href="mailto:suarez.nataliam@gmail.com"
         target="_blank"
         rel="noopener noreferrer"
