@@ -17,7 +17,7 @@ const experience = [
   },
   {
     "id":"8",
-    "date": "Jul 2020 - Ago 2020",
+    "date": "Jul 2020 - Agug 2020",
     "position": "BACKEND JAVASCRIPT DEVELOPER",
     "name": "Seguimos Educando, educ.ar",
     "tech": ["ReactJs","Feathers","MongoDB", "Docker"],
@@ -41,7 +41,7 @@ const experience = [
   },
   {
     "id":"5",
-    "date": "Ene 2020",
+    "date": "Jun 2020",
     "position": "FULL STACK DEVELOPER",
     "name": "Radio App Mobile, La Minga",
     "tech": ["Vue Native Script","Firebase","Django"],
@@ -49,7 +49,7 @@ const experience = [
   },
   {
     "id":"4",
-    "date": "Dic 2019",
+    "date": "Dec 2019",
     "position": "FULL STACK DEVELOPER",
     "name": "A church near you, The Developer Society",
     "tech": ["Django","Javascript","CSS"],
