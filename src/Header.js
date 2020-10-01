@@ -5,7 +5,7 @@ import './App.css';
 function Header() {
   return (
     <div className="background-gray-3 column justify-start color-white padding-v-small fz-1">
-      <div className="row-custom justify-s-around">
+      <div className="row-custom justify-center">
         <img src={fire} className="height-30 align-center margin-b-small" alt="logo" />
         <div className="column justify-s-around padding-vmin-v-small">
           <a
@@ -43,7 +43,7 @@ function Header() {
         </div>
       </div>
       <div className="padding-vmin-v-small justify-s-between">
-        <p className="without-margin strong-1-text padding-b-small color-white fz-1 t-align-center">
+        <p className="without-margin strong-1-text padding-b-small color-white fz-5 t-align-center">
           nat | developer & art-curious
         </p>
         <p className="without-margin light-300-text fz-4 italic t-align-center padding-small">

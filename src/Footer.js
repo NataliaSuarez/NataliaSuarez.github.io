@@ -8,10 +8,10 @@ function Footer() {
     className="background-gray-3"
     alt="Frontend"
   >
-    <div className="padding-large column">
+    <div className="padding-large column align-items-center">
       <img src={hands} className="height-30 align-center margin-b-small" alt="logo" />
       <a
-        className="color-white strong-text link-item align-init"
+        className="color-white fz-1 strong-text link-item align-init"
         href="https://www.linkedin.com/in/natalia-suarez-dev/"
         target="_blank"
         rel="noopener noreferrer"
@@ -19,7 +19,7 @@ function Footer() {
         + linkedin
       </a>
       <a
-        className="color-white strong-text link-item align-init"
+        className="color-white fz-1 strong-text link-item align-init"
         href="https://github.com/NataliaSuarez"
         target="_blank"
         rel="noopener noreferrer"
@@ -27,7 +27,7 @@ function Footer() {
         + github
       </a>
       <a
-        className="color-white strong-text link-item align-init"
+        className="color-white fz-1 strong-text link-item align-init"
         href="https://twitter.com/natsuarez42"
         target="_blank"
         rel="noopener noreferrer"
@@ -35,14 +35,14 @@ function Footer() {
         + twitter
       </a>
       <a
-        className="color-white strong-text link-item align-init"
+        className="color-white fz-1 strong-text link-item align-init"
         href="mailto:suarez.nataliam@gmail.com"
         target="_blank"
         rel="noopener noreferrer"
       >
         + nat@dev
       </a>
-      <p className="color-white">&gt; share with me new funny projects, tech challenges & new knowledges :)</p>
+      <p className="color-white light-300-text fz-4 italic padding-small">&gt; share with me new funny projects, tech challenges & new knowledges :)</p>
     </div>
   </section>
   );

@@ -9,7 +9,7 @@ function Body() {
       <div className="background-white column justify-start fz-5 color-gray-dark padding-v-small">
         <div className="row-custom">
           <div className="padding-vmin-v-small justify-s-between">
-            <p className="without-margin strong-1-text padding-b-small color-green-2">
+            <p className="without-margin strong-1-text fz-5 padding-b-small color-green-2">
               <strong>&gt;</strong> about me
             </p>
             <p className="without-margin fz-4 light-300-text padding-small color-gray-strong">

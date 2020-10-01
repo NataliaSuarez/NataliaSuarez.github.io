@@ -168,6 +168,9 @@
 .justify-s-between {
   justify-content: space-between;
 }
+.justify-center {
+  justify-content: center;
+}
 /* Align properties */
 .align-center {
   align-self: center;
@@ -177,6 +180,9 @@
 }
 .align-init {
   align-self: initial;
+}
+.align-items-center {
+  align-items: center;
 }
 
 /* Size properties*/
@@ -262,6 +268,9 @@
 }
 /* media desktop modifiers */
 @media only screen and (min-width: 768px) {
+  .fz-5 {
+    font-size: calc(10px + 3vmin);
+  }
   .App-header {
     flex-direction: row;
     justify-content: flex-start;

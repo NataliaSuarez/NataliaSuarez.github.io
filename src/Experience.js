@@ -26,23 +26,23 @@ function Experience() {
                   <AccordionSummary>
                     <TimelineItem className="background-shadow">
                       <TimelineOppositeContent>
-                        <p color="textSecondary" className="fz-2 color-gray">{e.date}</p>
+                        <p color="textSecondary" className="fz-6 light-300-text color-gray">{e.date}</p>
                       </TimelineOppositeContent>
                       <TimelineSeparator>
                         <TimelineDot variant="outlined"/>
                         <TimelineConnector />
                       </TimelineSeparator>
                       <TimelineContent>
-                        <p className="color-green-2 fz-2 strong-text"><strong>{e.position}</strong></p>
-                        <p className="color-gray fz-2 light-300-text"><strong>{e.name}</strong></p>
-                        <p className="color-gray-intermediate fz-2 strong-text">
+                        <p className="without-margin color-green-2 fz-4 strong-text"><strong>{e.position}</strong></p>
+                        <p className="without-margin color-gray fz-6 light-300-text"><strong>{e.name}</strong></p>
+                        <p className="without-margin color-gray-intermediate fz-6 strong-text">
                           { e.tech.map(t=> <span key={t.toString()}> {t.toString()} </span>) }
                         </p>
                       </TimelineContent>
                     </TimelineItem>
                   </AccordionSummary>
                   <AccordionDetails>
-                    <p className="color-gray fz-2 light-300-text">{e.data}</p>
+                    <p className="color-gray fz-6 light-300-text">{e.data}</p>
                   </AccordionDetails>
                 </Accordion>
             )})
