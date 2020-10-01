@@ -17,7 +17,7 @@ const experience = [
   },
   {
     "id":"8",
-    "date": "Jul 2020 - Agug 2020",
+    "date": "Jul 2020 - Aug 2020",
     "position": "BACKEND JAVASCRIPT DEVELOPER",
     "name": "Seguimos Educando, educ.ar",
     "tech": ["ReactJs","Feathers","MongoDB", "Docker"],
