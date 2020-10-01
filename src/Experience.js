@@ -13,9 +13,9 @@ import './App.css';
 
 function Experience() {
   return (
-    <div className="App-body header-elem-box">
-      <div className="header-elem-box">
-        <p className="title color-green-2">
+    <div className="background-white column justify-start fz-5 color-gray-dark padding-v-small">
+      <div className="padding-vmin-v-small justify-s-between">
+        <p className="without-margin strong-1-text padding-b-small color-green-2">
           <strong>&gt;</strong> experience
         </p>
         <Timeline align="alternate">
@@ -24,25 +24,25 @@ function Experience() {
               return (
                 <Accordion key={e.id}>
                   <AccordionSummary>
-                    <TimelineItem className="exp-card">
+                    <TimelineItem className="background-shadow">
                       <TimelineOppositeContent>
-                        <p color="textSecondary" className="App-link exp-item-3 color-gray">{e.date}</p>
+                        <p color="textSecondary" className="fz-2 color-gray">{e.date}</p>
                       </TimelineOppositeContent>
                       <TimelineSeparator>
                         <TimelineDot variant="outlined"/>
                         <TimelineConnector />
                       </TimelineSeparator>
                       <TimelineContent>
-                        <p className="App-link color-green-2 exp-item-2"><strong>{e.position}</strong></p>
-                        <p className="App-link color-gray exp-item"><strong>{e.name}</strong></p>
-                        <p className="App-link color-gray-intermediate exp-item-2">
+                        <p className="color-green-2 fz-2 strong-text"><strong>{e.position}</strong></p>
+                        <p className="color-gray fz-2 light-300-text"><strong>{e.name}</strong></p>
+                        <p className="color-gray-intermediate fz-2 strong-text">
                           { e.tech.map(t=> <span key={t.toString()}> {t.toString()} </span>) }
                         </p>
                       </TimelineContent>
                     </TimelineItem>
                   </AccordionSummary>
                   <AccordionDetails>
-                    <p className="App-link color-gray exp-item">{e.data}</p>
+                    <p className="color-gray fz-2 light-300-text">{e.data}</p>
                   </AccordionDetails>
                 </Accordion>
             )})
