@@ -27,8 +27,8 @@ function Skills () {
             alt="Backend"
           />
           <Carousel.Caption>
-            <h2 className="tech-item color-green strong-text"><strong>&gt;</strong> backend</h2>
-            <p className="tech-description color-white">Symfony, Django, Feathers.js | Javascript, Python, PHP, Java</p>
+            <h2 className="color-green strong-text fz-3"><strong>&gt;</strong> backend</h2>
+            <p className="margin-small color-white fz-1">Symfony, Django, Feathers.js | Javascript, Python, PHP, Java</p>
             <div className="margin-small">
               <img
                 src={django}
@@ -59,8 +59,8 @@ function Skills () {
             alt="Frontend"
           />
           <Carousel.Caption>
-            <h2 className="tech-item color-green strong-text"><strong>&gt;</strong> frontend</h2>
-            <p className="tech-description color-white">Vue, React, Vue Native Script | Flux</p>
+            <h2 className="color-green strong-text fz-3"><strong>&gt;</strong> frontend</h2>
+            <p className="margin-small color-white fz-1">Vue, React, Vue Native Script | Flux</p>
             <div className="margin-small">
               <img
                 src={vue}
@@ -92,8 +92,8 @@ function Skills () {
             alt="Databases"
           />
           <Carousel.Caption>
-            <h2 className="tech-item color-green strong-text"><strong>&gt;</strong> databases</h2>
-            <p className="tech-description color-white">Mysql, MongoDB, PosgresSQL</p>
+            <h2 className="color-green strong-text fz-3"><strong>&gt;</strong> databases</h2>
+            <p className="margin-small color-white fz-1">Mysql, MongoDB, PosgresSQL</p>
             <div className="margin-small">
               <img
                 src={mysql}
@@ -119,8 +119,8 @@ function Skills () {
             alt="Infrastructure"
           />
           <Carousel.Caption>
-            <h2 className="tech-item color-green strong-text"><strong>&gt;</strong> infrastructure</h2>
-            <p className="tech-description color-white">Docker, docker-compose, bash, git</p>
+            <h2 className="color-green strong-text fz-3"><strong>&gt;</strong> infrastructure</h2>
+            <p className="margin-small color-white fz-1">Docker, docker-compose, bash, git</p>
             <img
               src={docker}
               className="w-fix-little"

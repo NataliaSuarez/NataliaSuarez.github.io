@@ -17,6 +17,9 @@
 .color-gray-strong {
   color: #333;
 }
+.color-gray-blue{
+  color: #3d3d3d;
+}
 .color-gray-strong:hover {
   color: #333;
   font-weight: 600;
@@ -71,6 +74,9 @@
 .light-300-text {
   font-weight: 300;
 }
+.light-400-text {
+  font-weight: 400;  
+}
 .strong-text{
   font-weight: 500;
 }
@@ -120,6 +126,9 @@
 }
 .margin-b-small{
   margin-bottom: 0.5em;
+}
+.margin-t-small{
+  margin-top: 0.3em;
 }
 .padding-v-small{
   padding: 1em;
@@ -208,17 +217,7 @@
 .aling-centered {
   align-self: flex-end !important;
 }
-.tech-item{
-  color: #3d3d3d;
-  font-weight: 400;
-  margin-top: 0.3em;
-  font-size: calc(10px + 3vmin);
-}
-.tech-description {
-  font-weight: 200;
-  margin: 0.3em;
-  font-size: calc(9px + 1.7vmin);
-}
+
 /* bootstrap modifiers */
 .carousel-control-prev-icon {
   display: none !important;
