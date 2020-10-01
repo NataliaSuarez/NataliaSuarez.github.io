@@ -6,23 +6,26 @@ import './App.css';
 function Body() {
   return (
     <div>
-      <div className="App-body header-elem-box">
+      <div className="background-white column justify-start fz-5 color-gray-dark padding-v-small">
         <div className="row-custom">
-          <div className="header-elem-box">
-            <p className="title color-green-2">
+          <div className="padding-vmin-v-small justify-s-between">
+            <p className="without-margin strong-1-text padding-b-small color-green-2">
               <strong>&gt;</strong> about me
             </p>
-            <p className="exp-item-reg text-console padding-small color-gray-strong">
+            <p className="without-margin fz-4 light-300-text padding-small color-gray-strong">
               I've been a backend developer programming in Django and Symfony and I've had fun learning Node and React this year.
             </p>
-            <p className="exp-item-reg text-console padding-small color-gray-strong">
+            <p className="without-margin fz-4 light-300-text padding-small color-gray-strong">
               I think collective projects are a wonderful way to work in groups of people where we can share experiences and knowledge.
             </p>
-            <p className="exp-item-reg text-console padding-small color-gray-strong">
-              I'm also interested in art, free software & technical challenges. That's why I'm playing with <a href="https://hydra.ojack.xyz/" className="color-gray-strong color-gray-strong-link">Hydra</a>, <a href="https://minimaxir.com/2020/01/twitter-gpt2-bot/" className="color-gray-strong color-gray-strong-link">GTP-2</a> and other art-tech tools.
+            <p className="without-margin fz-4 light-300-text padding-small color-gray-strong">
+              I'm also interested in art, free software & technical challenges. That's why I'm playing with <a
+                href="https://hydra.ojack.xyz/"
+                className="color-gray-strong color-gray-strong-link">Hydra</a>, <a
+                href="https://minimaxir.com/2020/01/twitter-gpt2-bot/"
+                className="color-gray-strong color-gray-strong-link">GTP-2</a> and other art-tech tools.
             </p>
           </div>
-          {/* <img src={hands} className="App-logo aling-centered" alt="logo" /> */}
         </div>
       </div>
       <Experience />
