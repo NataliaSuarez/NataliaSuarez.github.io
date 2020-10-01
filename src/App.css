@@ -236,6 +236,9 @@
   left: 5% !important;
   bottom: 15vmin !important;
 }
+.MuiTimelineConnector-root {
+  display: none;
+}
 .MuiTimeline-root{
   display: flex !important;
   padding: 0 !important;
@@ -265,6 +268,10 @@
 .MuiCollapse-entered, .MuiCollapse-container {
   padding-left: 3vmin !important;
   padding-right: 3vmin !important;
+}
+.MuiTimelineOppositeContent-root {
+  max-width: 5em !important;
+  text-align: unset !important;
 }
 /* media desktop modifiers */
 @media only screen and (min-width: 768px) {
