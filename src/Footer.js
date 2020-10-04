@@ -36,7 +36,7 @@ function Footer() {
       </a>
       <a
         className="color-white fz-1 strong-text link-item align-init"
-        href="mailto:suarez.nataliam@gmail.com"
+        href="mailto:contact@natdeveloper.com"
         target="_blank"
         rel="noopener noreferrer"
       >

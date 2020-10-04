@@ -34,7 +34,7 @@ function Header() {
           </a>
           <a
             className="color-white fz-1 strong-text link-item align-f-end"
-            href="mailto:suarez.nataliam@gmail.com"
+            href="mailto:contact@natdeveloper.com"
             target="_blank"
             rel="noopener noreferrer"
           >
