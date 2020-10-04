@@ -1,13 +1,13 @@
 const backend = [
   {
     data: {
-      php: 0.7,
-      symfony: .8,
-      laravel: .5,
+      php: 0.8,
+      symfony: .9,
+      laravel: .7,
       java: 0.4,
       kotlin: 0.5,
-      node: 0.67,
-      feathers: 0.6,
+      node: 0.7,
+      feathers: 0.7,
       python: 0.8,
       django: .8,
     },
@@ -30,13 +30,13 @@ const frontend = [
   {
     data: {
       react: 0.7,
-      vue: .85,
+      vue: .75,
       flux: 0.4,
       reactnative: 0.5,
       vuenative: 0.6,
-      html: 0.9,
-      javascript: 0.68,
-      motores: 0.9
+      html: 0.95,
+      javascript: 0.7,
+      motores: 0.98
     },
     meta: { class: '#01a029' }
   },
