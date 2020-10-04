@@ -147,7 +147,14 @@
 }
 
 /* Flex properties*/
+.flex {
+  display: flex;
+}
 .column {
+  display: flex;
+  flex-direction: column;
+}
+.column-flex {
   display: flex;
   flex-direction: column;
 }
@@ -202,6 +209,9 @@
   height: 27vmin;
   margin: 0.3em;
 }
+.f-width {
+  width: fit-content !important;
+}
 
 /* elems styles */
 .link-item {
@@ -236,6 +246,9 @@
   left: 5% !important;
   bottom: 15vmin !important;
 }
+.MuiTimelineConnector-root {
+  display: none;
+}
 .MuiTimeline-root{
   display: flex !important;
   padding: 0 !important;
@@ -265,6 +278,10 @@
 .MuiCollapse-entered, .MuiCollapse-container {
   padding-left: 3vmin !important;
   padding-right: 3vmin !important;
+}
+.MuiTimelineOppositeContent-root {
+  max-width: 5em !important;
+  text-align: unset !important;
 }
 /* media desktop modifiers */
 @media only screen and (min-width: 768px) {
@@ -312,5 +329,15 @@
   .MuiCollapse-entered, .MuiCollapse-container {
     padding-left: 30vmin !important;
     padding-right: 30vmin !important;
+  }
+  .column-flex {
+    display: flex;
+    flex-direction: row;
+  }
+  .desktop-flex {
+    display: flex;
+  }
+  .padding-large-desktop{
+    padding:15vmin;
   }
 }
