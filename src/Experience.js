@@ -23,7 +23,7 @@ function Experience() {
           <strong>&gt;</strong> experience
         </p>
         <div className="desktop-flex">
-          <div className="column padding-small">
+          <div className="column padding-large-desktop">
             {
               data.map((d, i) => {
                 return(
