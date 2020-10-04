@@ -147,7 +147,14 @@
 }
 
 /* Flex properties*/
+.flex {
+  display: flex;
+}
 .column {
+  display: flex;
+  flex-direction: column;
+}
+.column-flex {
   display: flex;
   flex-direction: column;
 }
@@ -201,6 +208,9 @@
 .w-fix-big {
   height: 27vmin;
   margin: 0.3em;
+}
+.f-width {
+  width: fit-content !important;
 }
 
 /* elems styles */
@@ -319,5 +329,15 @@
   .MuiCollapse-entered, .MuiCollapse-container {
     padding-left: 30vmin !important;
     padding-right: 30vmin !important;
+  }
+  .column-flex {
+    display: flex;
+    flex-direction: row;
+  }
+  .desktop-flex {
+    display: flex;
+  }
+  .padding-large-desktop{
+    padding:15vmin;
   }
 }
