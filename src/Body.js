@@ -22,7 +22,10 @@ function Body() {
                 href="https://hydra.ojack.xyz/"
                 className="color-gray-strong color-gray-strong-link">Hydra</a>, <a
                 href="https://minimaxir.com/2020/01/twitter-gpt2-bot/"
-                className="color-gray-strong color-gray-strong-link">GTP-2</a> and other art-tech tools.
+                className="color-gray-strong color-gray-strong-link">GTP-2</a> (<a
+                href="https://texts.natdeveloper.com/"
+                className="color-gray-strong color-gray-strong-link"
+                >Spinetta text generator AI</a>) and other art-tech tools.
             </p>
           </div>
         </div>
