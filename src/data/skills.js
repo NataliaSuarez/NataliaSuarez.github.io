@@ -48,7 +48,7 @@ const frontendCaptions = {
   reactnative: 'React Native',
   vuenative: 'Vue Native',
   html: 'Html y CSS',
-  javascript:  'Javascript',
+  javascript:  'JS',
   motores: 'Motores de html'
 }
 
