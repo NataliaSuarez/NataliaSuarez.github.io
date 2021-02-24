@@ -12,10 +12,14 @@ import AccordionDetails from "@material-ui/core/AccordionDetails";
 import experience from "./data/experience";
 import RadarChart from "react-svg-radar-chart";
 import "react-svg-radar-chart/build/css/index.css";
+import { makeStyles, Container } from "@material-ui/core";
+import theme from "./theme";
 import { data, captions } from "./data/skills";
 import "./App.css";
 
-function Experience() {
+const Experience = () => {
+  const classes = useStyles();
+  console.log(data);
   return (
     <div className="background-white column justify-start fz-5 color-gray-dark padding-v-small">
       <div className="padding-vmin-v-small justify-s-between">
@@ -26,7 +30,10 @@ function Experience() {
           <div className="column padding-large-desktop">
             {data.map((d, i) => {
               return (
-                <div className="justify-center flex padding-small" key={i}>
+                <div className={classes.radarContainer} key={i}>
+                  <span className={classes.radarSkillName}>
+                    {d[0].name || ""}
+                  </span>
                   <RadarChart captions={captions[i]} data={data[i]} />
                 </div>
               );
@@ -76,6 +83,23 @@ function Experience() {
       </div>
     </div>
   );
-}
+};
 
 export default Experience;
+
+const useStyles = makeStyles((theme) => ({
+  radarContainer: {
+    justifyContent: "center",
+    display: "contents",
+    padding: "1vmin",
+    "& svg": {
+      marginBottom: "20px",
+      alignSelf: "center",
+    },
+  },
+  radarSkillName: {
+    alignSelf: "center",
+    marginTop: "20px",
+    fontSize: "20px",
+  },
+}));

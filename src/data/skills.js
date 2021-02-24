@@ -12,6 +12,7 @@ const backend = [
       django: 0.8,
     },
     meta: { color: "#00b92e" },
+    name: "Backend",
   },
 ];
 const backendCaptions = {
@@ -39,6 +40,7 @@ const frontend = [
       motores: 0.98,
     },
     meta: { class: "#01a029" },
+    name: "Frontend",
   },
 ];
 const frontendCaptions = {
@@ -61,6 +63,7 @@ const devOps = [
       bash: 0.8,
     },
     meta: { color: "#00b92e" },
+    name: "Tools",
   },
 ];
 const devOpsCaptions = {
