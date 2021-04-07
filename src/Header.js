@@ -1,29 +1,28 @@
 import React from "react";
-// import fire from "./fire_white.svg";
+import { makeStyles } from "@material-ui/core";
+
 // import cleanCode from "./../cle";
 import "./App.css";
 
 function Header() {
+  const classes = useStyles();
   return (
     <div className="background-gray-3 column justify-start color-white padding-v-small fz-1">
-      <div className="padding-vmin-v-small justify-s-between">
-        <p className="without-margin strong-1-text padding-b-small color-white fz-5 t-align-center">
-          nat | developer & art-curious
-        </p>
-        <p className="without-margin light-300-text fz-4 italic t-align-center padding-small">
-          Web about the projects in which I have participated, my interests and
-          deep unknowledge.
-        </p>
+      <div className={classes.titleContainer}>
+        <p className={classes.titleHeader}>nat | developer & art-curious</p>
       </div>
-      <div className="row-custom justify-center">
+      <div className={classes.infoContainer}>
         {/* <img
           src={fire}
           className="height-30 align-center margin-b-small"
           alt="logo"
         /> */}
-        <div className="column justify-s-around padding-vmin-v-small">
+        <p className={classes.hightlightedText}>
+          Web about the projects in which I have participated and my interests.
+        </p>
+        <div className={classes.linkContainer}>
           <a
-            className="color-white fz-1 strong-text link-item align-f-end"
+            className={classes.link}
             href="https://www.linkedin.com/in/natalia-suarez-dev/"
             target="_blank"
             rel="noopener noreferrer"
@@ -31,7 +30,7 @@ function Header() {
             linkedin
           </a>
           <a
-            className="color-white fz-1 strong-text link-item align-f-end"
+            className={classes.link}
             href="https://github.com/NataliaSuarez"
             target="_blank"
             rel="noopener noreferrer"
@@ -39,7 +38,7 @@ function Header() {
             github
           </a>
           <a
-            className="color-white fz-1 strong-text link-item align-f-end"
+            className={classes.link}
             href="https://twitter.com/natsuarez42"
             target="_blank"
             rel="noopener noreferrer"
@@ -47,8 +46,8 @@ function Header() {
             twitter
           </a>
           <a
-            className="color-white fz-1 strong-text link-item align-f-end"
-            href="mailto:contact@natdeveloper.com"
+            className={classes.link}
+            href="mailto:suarez.nataliam@gmail.com"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -61,3 +60,64 @@ function Header() {
 }
 
 export default Header;
+
+const useStyles = makeStyles((theme) => ({
+  titleContainer: {
+    justifyContent: "center",
+    display: "flex",
+    flexDirection: "column",
+    alignItems: "center",
+    marginBottom: "-40px",
+    zIndex: 1,
+  },
+  titleHeader: {
+    margin: 0,
+    fontWeight: "600",
+    fontSize: "28px",
+    paddingBottom: "1vmin",
+    textAlign: "center",
+    // color: "yellow",
+    background: "yellow",
+    color: "black",
+    width: "fit-content",
+  },
+  infoContainer: {
+    justifyContent: "space-between",
+    display: "flex",
+    flexDirection: "row",
+    alignItems: "center",
+    backgroundImage: "url(/paperblackbackground.jpg)",
+  },
+  hightlightedText: {
+    margin: 0,
+    fontWeight: "300",
+    fontSize: "15px",
+    fontStyle: "italic",
+    textAlign: "center",
+    padding: "1vmin",
+    background: "white",
+    color: "black",
+    width: "350px",
+    height: "100%",
+  },
+  linkContainer: {
+    display: "flex",
+    flexDirection: "column",
+    justifyContent: "space-around",
+    padding: "0.5vmin",
+    paddingRight: "15px",
+  },
+  link: {
+    zIndex: 1,
+    fontSize: "19px",
+    fontWeight: "500",
+    color: "white",
+    inlineSize: "max-content",
+    textDecoration: "unset",
+    alignSelf: "flex-end",
+    "&:hover": {
+      fontWeight: "800",
+      color: "white",
+    },
+  },
+}));

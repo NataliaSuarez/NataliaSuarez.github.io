@@ -1,4 +1,6 @@
 import React from "react";
+import { makeStyles } from "@material-ui/core";
+
 import Timeline from "@material-ui/lab/Timeline";
 import TimelineItem from "@material-ui/lab/TimelineItem";
 import TimelineSeparator from "@material-ui/lab/TimelineSeparator";
@@ -12,18 +14,16 @@ import AccordionDetails from "@material-ui/core/AccordionDetails";
 import experience from "./data/experience";
 import RadarChart from "react-svg-radar-chart";
 import "react-svg-radar-chart/build/css/index.css";
-import { makeStyles, Container } from "@material-ui/core";
 import theme from "./theme";
 import { data, captions } from "./data/skills";
 import "./App.css";
 
 const Experience = () => {
   const classes = useStyles();
-  console.log(data);
   return (
     <div className="background-white column justify-start fz-5 color-gray-dark padding-v-small">
       <div className="padding-vmin-v-small justify-s-between">
-        <p className="without-margin strong-1-text padding-b-small color-green-2">
+        <p className={classes.hightlightedText}>
           <strong>&gt;</strong> experience
         </p>
         <div className="desktop-flex">
@@ -44,19 +44,26 @@ const Experience = () => {
               return (
                 <Accordion key={e.id}>
                   <AccordionSummary>
-                    <TimelineItem className="background-shadow">
-                      <TimelineOppositeContent>
+                    <TimelineItem className={classes.timeLineItem}>
+                      <TimelineOppositeContent
+                        className={classes.oppositeContent}
+                      >
                         <p
                           color="textSecondary"
-                          className="fz-6 light-300-text color-gray"
+                          // className="fz-6 light-300-text color-gray"
+                          className={classes.oppositeContentDate}
                         >
                           {e.date}
                         </p>
                       </TimelineOppositeContent>
-                      <TimelineSeparator>
-                        <TimelineDot variant="outlined" />
+                      <div className={classes.separator}></div>
+                      {/* <TimelineSeparator>
+                        <TimelineDot
+                          variant="outlined"
+                          className={classes.hidden}
+                        />
                         <TimelineConnector />
-                      </TimelineSeparator>
+                      </TimelineSeparator> */}
                       <TimelineContent>
                         <p className="without-margin color-green-2 fz-4 strong-text">
                           <strong>{e.position}</strong>
@@ -101,5 +108,32 @@ const useStyles = makeStyles((theme) => ({
     alignSelf: "center",
     marginTop: "20px",
     fontSize: "20px",
+  },
+  hidden: {
+    display: "none",
+  },
+  separator: {
+    borderRight: "1px solid #cecbcb",
+  },
+  timeLineItem: {
+    //
+  },
+  oppositeContent: {
+    backgroundColor: "#01a029",
+    opacity: "10%",
+  },
+  oppositeContentDate: {
+    fontSize: "calc(5px + 1.4vmin)",
+    fontWeight: "300",
+    color: "#242b33",
+  },
+  hightlightedText: {
+    margin: 0,
+    fontWeight: "600",
+    fontSize: "26px",
+    paddingBottom: "1vmin",
+    background: "yellow",
+    color: "black",
+    width: "fit-content",
   },
 }));
