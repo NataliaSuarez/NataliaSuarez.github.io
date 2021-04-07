@@ -65,13 +65,13 @@ const Experience = () => {
                         <TimelineConnector />
                       </TimelineSeparator> */}
                       <TimelineContent>
-                        <p className="without-margin color-green-2 fz-4 strong-text">
+                        <p className={classes.roleText}>
                           <strong>{e.position}</strong>
                         </p>
-                        <p className="without-margin color-gray fz-6 light-300-text">
+                        <p className={classes.projectNameText}>
                           <strong>{e.name}</strong>
                         </p>
-                        <p className="without-margin color-gray-intermediate fz-6 strong-text">
+                        <p className={classes.techContent}>
                           {e.tech.map((t) => (
                             <span key={t.toString()}> {t.toString()} </span>
                           ))}
@@ -113,19 +113,42 @@ const useStyles = makeStyles((theme) => ({
     display: "none",
   },
   separator: {
-    borderRight: "1px solid #cecbcb",
+    // borderRight: "1px solid #cecbcb",
   },
   timeLineItem: {
     //
   },
-  oppositeContent: {
-    backgroundColor: "#01a029",
-    opacity: "10%",
+  roleText: {
+    margin: 0,
+    fontSize: "14px",
+    fontWeight: "500",
+    color: "yellow",
+    background: "#333",
+    width: "fit-content",
   },
-  oppositeContentDate: {
-    fontSize: "calc(5px + 1.4vmin)",
+  projectNameText: {
+    margin: 0,
+    fontSize: "14px",
     fontWeight: "300",
     color: "#242b33",
+  },
+  techContent: {
+    margin: 0,
+    fontSize: "14px",
+    fontWeight: "500",
+    color: "#888787",
+  },
+  oppositeContent: {
+    // backgroundColor: "#01a029",
+    background: "fixed",
+    backgroundImage: "url(/paperblackbackground.jpg)",
+    maxWidth: "100px !important",
+    height: "100px",
+  },
+  oppositeContentDate: {
+    fontWeight: "300",
+    color: "white",
+    fontSize: "26px",
   },
   hightlightedText: {
     margin: 0,

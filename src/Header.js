@@ -7,7 +7,7 @@ import "./App.css";
 function Header() {
   const classes = useStyles();
   return (
-    <div className="background-gray-3 column justify-start color-white padding-v-small fz-1">
+    <div className={classes.headerContainer}>
       <div className={classes.titleContainer}>
         <p className={classes.titleHeader}>nat | developer & art-curious</p>
       </div>
@@ -62,18 +62,27 @@ function Header() {
 export default Header;
 
 const useStyles = makeStyles((theme) => ({
+  headerContainer: {
+    //background-gray-3 column justify-start color-white padding-v-small fz-1
+    background: "#0c0c0c",
+    display: "flex",
+    flexDirection: "column",
+    justifyContent: "flex-start",
+    color: "#fafafa",
+    padding: "3em 0 2.5em 0",
+  },
   titleContainer: {
     justifyContent: "center",
     display: "flex",
     flexDirection: "column",
     alignItems: "center",
-    marginBottom: "-40px",
+    marginBottom: "-33px",
     zIndex: 1,
   },
   titleHeader: {
     margin: 0,
     fontWeight: "600",
-    fontSize: "28px",
+    fontSize: "32px",
     paddingBottom: "1vmin",
     textAlign: "center",
     // color: "yellow",
@@ -82,10 +91,12 @@ const useStyles = makeStyles((theme) => ({
     width: "fit-content",
   },
   infoContainer: {
+    height: "8em",
     justifyContent: "space-between",
     display: "flex",
     flexDirection: "row",
     alignItems: "center",
+    background: "fixed",
     backgroundImage: "url(/paperblackbackground.jpg)",
   },
   hightlightedText: {
@@ -98,7 +109,7 @@ const useStyles = makeStyles((theme) => ({
     background: "white",
     color: "black",
     width: "350px",
-    height: "100%",
+    height: "fit-content",
   },
   linkContainer: {
     display: "flex",

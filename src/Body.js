@@ -16,7 +16,8 @@ function Body() {
             </p>
             <p className={classes.descriptionText}>
               I've been a backend developer programming in Django and Symfony
-              and I've had fun learning Node and React this year.
+              and I've had fun learning Node last year. I'm new developing on
+              frontend but I'm woking on React projects and I love it!
             </p>
             <p className={classes.descriptionText}>
               I think collective projects are a wonderful way to work in groups

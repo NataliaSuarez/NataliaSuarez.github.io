@@ -11,7 +11,6 @@ const backend = [
       python: 0.8,
       django: 0.8,
     },
-    meta: { color: "#00b92e" },
     name: "Backend",
   },
 ];
@@ -39,7 +38,6 @@ const frontend = [
       javascript: 0.8,
       motores: 0.98,
     },
-    meta: { class: "#01a029" },
     name: "Frontend",
   },
 ];
@@ -62,7 +60,6 @@ const devOps = [
       heroku: 0.5,
       bash: 0.8,
     },
-    meta: { color: "#00b92e" },
     name: "Tools",
   },
 ];
