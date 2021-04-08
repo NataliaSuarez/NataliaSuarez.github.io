@@ -123,7 +123,7 @@ const useStyles = makeStyles((theme) => ({
   titleHeader: {
     margin: 0,
     fontWeight: "600",
-    fontSize: "32px",
+    fontSize: "33px",
     paddingBottom: "1vmin",
     textAlign: "center",
     // color: "yellow",
@@ -142,7 +142,7 @@ const useStyles = makeStyles((theme) => ({
     },
   },
   infoContainer: {
-    height: "8em",
+    height: "15em",
     justifyContent: "space-between",
     display: "flex",
     flexDirection: "row",

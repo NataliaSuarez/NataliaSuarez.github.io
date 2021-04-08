@@ -21,24 +21,12 @@ import "./App.css";
 const Experience = () => {
   const classes = useStyles();
   return (
-    <div className="background-white column justify-start fz-5 color-gray-dark padding-v-small">
+    <div className="background-gray-3 column justify-start fz-5 color-gray-dark padding-v-small">
       <div className="padding-vmin-v-small justify-s-between">
         <p className={classes.hightlightedText}>
           <strong>&gt;</strong> experience
         </p>
         <div className="desktop-flex">
-          {/* <div className="column padding-large-desktop">
-            {data.map((d, i) => {
-              return (
-                <div className={classes.radarContainer} key={i}>
-                  <span className={classes.radarSkillName}>
-                    {d[0].name || ""}
-                  </span>
-                  <RadarChart captions={captions[i]} data={data[i]} />
-                </div>
-              );
-            })}
-          </div> */}
           <Timeline align="alternate" className={classes.timeLineContainer}>
             {experience.map((e) => {
               return (
@@ -50,21 +38,13 @@ const Experience = () => {
                       >
                         <p
                           color="textSecondary"
-                          // className="fz-6 light-300-text color-gray"
                           className={classes.oppositeContentDate}
                         >
                           {e.date}
                         </p>
                       </TimelineOppositeContent>
                       <div className={classes.separator}></div>
-                      {/* <TimelineSeparator>
-                        <TimelineDot
-                          variant="outlined"
-                          className={classes.hidden}
-                        />
-                        <TimelineConnector />
-                      </TimelineSeparator> */}
-                      <TimelineContent className={classes.titleTimelineContent}>
+                      <TimelineContent>
                         <p className={classes.roleText}>
                           <strong>{e.position}</strong>
                         </p>
@@ -79,8 +59,8 @@ const Experience = () => {
                       </TimelineContent>
                     </TimelineItem>
                   </AccordionSummary>
-                  <AccordionDetails className={classes.timeLineItemDetails}>
-                    <p className="color-gray fz-6 light-300-text">{e.data}</p>
+                  <AccordionDetails>
+                    <p className={classes.titleTimelineContent}>{e.data}</p>
                   </AccordionDetails>
                 </Accordion>
               );
@@ -127,15 +107,27 @@ const useStyles = makeStyles((theme) => ({
   timeLineItem: {
     margin: 0,
   },
-  // titleTimelineContent: {
-  //   padding: "0 15px !important",
-  // },
+  titleTimelineContent: {
+    fontSize: "13px !important",
+    fontWeight: "200",
+    backgroundImage: "url(/pieceofpaper.png)",
+    backgroundSize: "470px 150px",
+    width: "470px",
+    height: "150px",
+    padding: "29px 13px",
+    // color: "#333",
+    overflow: "hidden",
+    // textOverflow: "ellipsis",
+    wordBreak: "break-word",
+    display: "-webkit-box",
+    "-webkit-line-clamp": 5,
+    "-webkit-box-orient": "vertical",
+  },
   roleText: {
     margin: 0,
     fontSize: "14px",
     fontWeight: "500",
-    color: "#333",
-    // background: "#333",
+    color: "yellow",
     width: "fit-content",
     paddingLeft: "15px",
   },
@@ -144,14 +136,14 @@ const useStyles = makeStyles((theme) => ({
     paddingLeft: "15px",
     fontSize: "14px",
     fontWeight: "300",
-    color: "#242b33",
+    color: "white",
   },
   techContent: {
     margin: 0,
     paddingLeft: "15px",
     fontSize: "14px",
     fontWeight: "500",
-    color: "#888787",
+    color: "gainsboro",
   },
   oppositeContent: {
     // backgroundColor: "#01a029",
