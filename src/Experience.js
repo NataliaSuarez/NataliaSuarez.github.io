@@ -27,7 +27,7 @@ const Experience = () => {
           <strong>&gt;</strong> experience
         </p>
         <div className="desktop-flex">
-          <div className="column padding-large-desktop">
+          {/* <div className="column padding-large-desktop">
             {data.map((d, i) => {
               return (
                 <div className={classes.radarContainer} key={i}>
@@ -38,8 +38,8 @@ const Experience = () => {
                 </div>
               );
             })}
-          </div>
-          <Timeline align="alternate" className="f-width">
+          </div> */}
+          <Timeline align="alternate" className={classes.timeLineContainer}>
             {experience.map((e) => {
               return (
                 <Accordion key={e.id}>
@@ -64,7 +64,7 @@ const Experience = () => {
                         />
                         <TimelineConnector />
                       </TimelineSeparator> */}
-                      <TimelineContent>
+                      <TimelineContent className={classes.titleTimelineContent}>
                         <p className={classes.roleText}>
                           <strong>{e.position}</strong>
                         </p>
@@ -79,7 +79,7 @@ const Experience = () => {
                       </TimelineContent>
                     </TimelineItem>
                   </AccordionSummary>
-                  <AccordionDetails>
+                  <AccordionDetails className={classes.timeLineItemDetails}>
                     <p className="color-gray fz-6 light-300-text">{e.data}</p>
                   </AccordionDetails>
                 </Accordion>
@@ -112,28 +112,43 @@ const useStyles = makeStyles((theme) => ({
   hidden: {
     display: "none",
   },
+  timeLineContainer: {
+    width: "fit-content !important",
+    // "& div:first-child": {
+    //   padding: "1em !important",
+    // },
+    "& div:last-child": {
+      padding: "0 !important",
+    },
+  },
   separator: {
     // borderRight: "1px solid #cecbcb",
   },
   timeLineItem: {
-    //
+    margin: 0,
   },
+  // titleTimelineContent: {
+  //   padding: "0 15px !important",
+  // },
   roleText: {
     margin: 0,
     fontSize: "14px",
     fontWeight: "500",
-    color: "yellow",
-    background: "#333",
+    color: "#333",
+    // background: "#333",
     width: "fit-content",
+    paddingLeft: "15px",
   },
   projectNameText: {
     margin: 0,
+    paddingLeft: "15px",
     fontSize: "14px",
     fontWeight: "300",
     color: "#242b33",
   },
   techContent: {
     margin: 0,
+    paddingLeft: "15px",
     fontSize: "14px",
     fontWeight: "500",
     color: "#888787",

@@ -3,13 +3,17 @@ import { makeStyles } from "@material-ui/core";
 
 // import cleanCode from "./../cle";
 import "./App.css";
+import { red } from "@material-ui/core/colors";
 
 function Header() {
   const classes = useStyles();
+
   return (
     <div className={classes.headerContainer}>
       <div className={classes.titleContainer}>
-        <p className={classes.titleHeader}>nat | developer & art-curious</p>
+        <p className={classes.titleHeader}>
+          <span id="name"></span>
+        </p>
       </div>
       <div className={classes.infoContainer}>
         {/* <img
@@ -27,7 +31,7 @@ function Header() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            linkedin
+            LINKEDIN
           </a>
           <a
             className={classes.link}
@@ -35,7 +39,7 @@ function Header() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            github
+            GITHUB
           </a>
           <a
             className={classes.link}
@@ -43,7 +47,7 @@ function Header() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            twitter
+            TWITTER
           </a>
           <a
             className={classes.link}
@@ -51,7 +55,7 @@ function Header() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            nat@dev
+            NAT@DEV
           </a>
         </div>
       </div>
@@ -62,6 +66,43 @@ function Header() {
 export default Header;
 
 const useStyles = makeStyles((theme) => ({
+  "@global": {
+    "@keyframes spin": {
+      "0%": {
+        content: '"nat | d_"',
+      },
+      "10%": {
+        content: '"nat | dev_"',
+      },
+      "20%": {
+        content: '"nat | deve_"',
+      },
+      "30%": {
+        content: '"nat | devel_"',
+      },
+      "40%": {
+        content: '"nat | develo_"',
+      },
+      "50%": {
+        content: '"nat | develop_"',
+      },
+      "60%": {
+        content: '"nat | develope_"',
+      },
+      "70%": {
+        content: '"nat | developer_"',
+      },
+      "80%": {
+        content: '"nat | developer"',
+      },
+      "90%": {
+        content: '"nat | developer_"',
+      },
+      "100%": {
+        content: '"nat | developer"',
+      },
+    },
+  },
   headerContainer: {
     //background-gray-3 column justify-start color-white padding-v-small fz-1
     background: "#0c0c0c",
@@ -88,7 +129,17 @@ const useStyles = makeStyles((theme) => ({
     // color: "yellow",
     background: "yellow",
     color: "black",
-    width: "fit-content",
+    // width: "fit-content",
+    width: "320px",
+    display: "flex",
+    alignSelf: "center",
+    "& #name": {
+      textAlign: "left",
+      "&::after": {
+        content: '""',
+        animation: "spin 2s linear infinite",
+      },
+    },
   },
   infoContainer: {
     height: "8em",
@@ -100,6 +151,9 @@ const useStyles = makeStyles((theme) => ({
     backgroundImage: "url(/paperblackbackground.jpg)",
   },
   hightlightedText: {
+    // borderBottom: "13px solid deeppink",
+    // borderRight: "14px solid deeppink",
+    // borderTop: "4px solid deeppink",
     margin: 0,
     fontWeight: "300",
     fontSize: "15px",
@@ -113,22 +167,30 @@ const useStyles = makeStyles((theme) => ({
   },
   linkContainer: {
     display: "flex",
-    flexDirection: "column",
-    justifyContent: "space-around",
+    flexDirection: "row",
+    // justifyContent: "space-around",
     padding: "0.5vmin",
     paddingRight: "15px",
+    alignSelf: "flex-end",
   },
   link: {
-    zIndex: 1,
-    fontSize: "19px",
+    fontSize: "15px",
     fontWeight: "500",
     color: "white",
     inlineSize: "max-content",
     textDecoration: "unset",
-    alignSelf: "flex-end",
+    // alignSelf: "flex-start",
+    padding: "10px 20px",
+    width: "150px",
     "&:hover": {
       fontWeight: "800",
       color: "white",
     },
+  },
+  spanVariableAnimation: {
+    content: "algo",
+    animation: "fadeIn 8s linear",
+    animationDelay: "2s",
+    animationIterationCount: "infinite",
   },
 }));

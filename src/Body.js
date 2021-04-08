@@ -17,7 +17,8 @@ function Body() {
             <p className={classes.descriptionText}>
               I've been a backend developer programming in Django and Symfony
               and I've had fun learning Node last year. I'm new developing on
-              frontend but I'm woking on React projects and I love it!
+              frontend, I'm woking on React projects now and I'm excited about
+              learning this framework!
             </p>
             <p className={classes.descriptionText}>
               I think collective projects are a wonderful way to work in groups
@@ -73,7 +74,7 @@ const useStyles = makeStyles((theme) => ({
   descriptionText: {
     margin: 0,
     fontWeight: "300",
-    fontSize: "18px",
+    fontSize: "16px",
     padding: "1vmin",
     color: "#333",
     "&:hover": {
