@@ -101,7 +101,7 @@ const useStyles = makeStyles((theme) => ({
     // paddingTop: "60px",
     // paddingBottom: "10px",
     width: "-webkit-fill-available",
-    justifyContent: "space-evenly",
+    justifyContent: "center",
   },
   linkItem: {
     //"color-white fz-1 strong-text link-item align-init"
@@ -109,6 +109,7 @@ const useStyles = makeStyles((theme) => ({
     fontSize: "9px",
     fontWeight: "400",
     textDecoration: "unset",
+    padding: "0 20px",
     "&:hover": {
       color: "black",
       fontWeight: "400",
@@ -140,5 +141,6 @@ const useStyles = makeStyles((theme) => ({
     // padding: "1vmin",
     width: "fit-content",
     height: "fit-content",
+    alignSelf: "center",
   },
 }));

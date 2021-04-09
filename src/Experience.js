@@ -140,7 +140,9 @@ const useStyles = makeStyles((theme) => ({
   },
   oppositeContent: {
     // backgroundColor: "#01a029",
-    background: "fixed",
+    backgroundPositionX: "center",
+    backgroundPositionY: "center",
+    // background: "fixed",
     backgroundImage: "url(/paperblackbackground.png)",
     // maxWidth: "100px !important",
     height: "100px",
