@@ -3,19 +3,12 @@ import { makeStyles } from "@material-ui/core";
 
 import Timeline from "@material-ui/lab/Timeline";
 import TimelineItem from "@material-ui/lab/TimelineItem";
-import TimelineSeparator from "@material-ui/lab/TimelineSeparator";
-import TimelineConnector from "@material-ui/lab/TimelineConnector";
 import TimelineContent from "@material-ui/lab/TimelineContent";
-import TimelineDot from "@material-ui/lab/TimelineDot";
 import TimelineOppositeContent from "@material-ui/lab/TimelineOppositeContent";
 import Accordion from "@material-ui/core/Accordion";
 import AccordionSummary from "@material-ui/core/AccordionSummary";
 import AccordionDetails from "@material-ui/core/AccordionDetails";
 import experience from "./data/experience";
-import RadarChart from "react-svg-radar-chart";
-import "react-svg-radar-chart/build/css/index.css";
-import theme from "./theme";
-import { data, captions } from "./data/skills";
 import "./App.css";
 
 const Experience = () => {

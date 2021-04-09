@@ -3,7 +3,6 @@ import { makeStyles } from "@material-ui/core";
 
 // import cleanCode from "./../cle";
 import "./App.css";
-import { red } from "@material-ui/core/colors";
 
 function Header() {
   const classes = useStyles();
