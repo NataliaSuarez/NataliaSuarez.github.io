@@ -86,7 +86,7 @@ const useStyles = makeStyles((theme) => ({
     display: "none",
   },
   timeLineContainer: {
-    width: "fit-content !important",
+    // width: "fit-content !important",
     // "& div:first-child": {
     //   padding: "1em !important",
     // },
@@ -121,7 +121,7 @@ const useStyles = makeStyles((theme) => ({
     fontSize: "14px",
     fontWeight: "500",
     color: "yellow",
-    width: "fit-content",
+    // width: "fit-content",
     paddingLeft: "15px",
   },
   projectNameText: {
@@ -141,14 +141,16 @@ const useStyles = makeStyles((theme) => ({
   oppositeContent: {
     // backgroundColor: "#01a029",
     background: "fixed",
-    backgroundImage: "url(/paperblackbackground.jpg)",
-    maxWidth: "100px !important",
+    backgroundImage: "url(/paperblackbackground.png)",
+    // maxWidth: "100px !important",
     height: "100px",
   },
   oppositeContentDate: {
     fontWeight: "300",
-    color: "white",
+    color: "black",
+    background: "white",
     fontSize: "26px",
+    width: "min-content",
   },
   hightlightedText: {
     margin: 0,
