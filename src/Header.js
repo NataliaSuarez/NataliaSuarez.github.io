@@ -70,35 +70,122 @@ const useStyles = makeStyles((theme) => ({
       "0%": {
         content: '"nat | d_"',
       },
-      "10%": {
+      "3%": {
+        content: '"nat | de_"',
+      },
+      "5%": {
         content: '"nat | dev_"',
       },
-      "20%": {
+      "7%": {
         content: '"nat | deve_"',
       },
+      "10%": {
+        content: '"nat | devel_"',
+      },
+      "13%": {
+        content: '"nat | develo_"',
+      },
+      "15%": {
+        content: '"nat | develop_"',
+      },
+      "17%": {
+        content: '"nat | develope_"',
+      },
+      "20%": {
+        content: '"nat | developer_"',
+      },
+      "23%": {
+        content: '"nat | developer"',
+      },
+      "25%": {
+        content: '"nat | developer_"',
+      },
+      "28%": {
+        content: '"nat | developer"',
+      },
       "30%": {
+        content: '"nat | developer_"',
+      },
+      "33%": {
+        content: '"nat | develope_"',
+      },
+      "35%": {
+        content: '"nat | develop_"',
+      },
+      "38%": {
         content: '"nat | devel_"',
       },
       "40%": {
-        content: '"nat | develo_"',
+        content: '"nat | deve_"',
+      },
+      "43%": {
+        content: '"nat | dev_"',
+      },
+      "45%": {
+        content: '"nat | de_"',
+      },
+      "48%": {
+        content: '"nat | d_"',
       },
       "50%": {
-        content: '"nat | develop_"',
+        content: '"nat | _"',
+      },
+      "53%": {
+        content: '"nat | "',
+      },
+      "55%": {
+        content: '"nat | _"',
+      },
+      "57%": {
+        content: '"nat | "',
       },
       "60%": {
-        content: '"nat | develope_"',
+        content: '"nat | c_"',
+      },
+      "63%": {
+        content: '"nat | cu_"',
+      },
+      "65%": {
+        content: '"nat | cur_"',
+      },
+      "68%": {
+        content: '"nat | curi_"',
       },
       "70%": {
-        content: '"nat | developer_"',
+        content: '"nat | curio_"',
+      },
+      "73%": {
+        content: '"nat | curiou_"',
+      },
+      "75%": {
+        content: '"nat | curious_"',
+      },
+      "78%": {
+        content: '"nat | curious"',
       },
       "80%": {
-        content: '"nat | developer"',
+        content: '"nat | curious_"',
+      },
+      "83%": {
+        content: '"nat | curiou_"',
+      },
+      "85%": {
+        content: '"nat | curio_"',
+      },
+      "88%": {
+        content: '"nat | curi_"',
       },
       "90%": {
-        content: '"nat | developer_"',
+        content: '"nat | cu_"',
+      },
+      "93%": {
+        content: '"nat | c_"',
+      },
+      "95%": {
+        content: '"nat | _"',
       },
       "100%": {
-        content: '"nat | developer"',
+        content: '"nat | "',
       },
     },
   },
@@ -138,7 +225,7 @@ const useStyles = makeStyles((theme) => ({
       textAlign: "left",
       "&::after": {
         content: '""',
-        animation: "spin 2s linear infinite",
+        animation: "spin 5s linear infinite",
       },
     },
   },
@@ -188,9 +275,11 @@ const useStyles = makeStyles((theme) => ({
     fontWeight: "400",
     fontSize: "11px",
     width: "150px",
-    padding: "5px 7px",
+    padding: "2px 4px",
     inlineSize: "max-content",
     textDecoration: "unset",
+    margin: "3px",
+    background: "black",
     // alignSelf: "flex-start",
     "&:hover": {
       fontWeight: "800",
@@ -200,6 +289,7 @@ const useStyles = makeStyles((theme) => ({
       fontWeight: "500",
       fontSize: "15px",
       padding: "10px 20px",
+      background: "transparent",
     },
   },
   spanVariableAnimation: {
