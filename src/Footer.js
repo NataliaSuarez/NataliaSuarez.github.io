@@ -79,7 +79,7 @@ const useStyles = makeStyles((theme) => ({
     display: "flex",
     flexDirection: "column",
     alignItems: "center",
-    backgroundImage: "url(/paperblackbackground.png)",
+    // backgroundImage: "url(/paperblackbackground.png)",
     background: "bottom",
     // justifyContent: "center",
     // "& svg": {
@@ -90,7 +90,7 @@ const useStyles = makeStyles((theme) => ({
     display: "flex",
     justifyContent: "center",
     flexDirection: "column",
-    background: "yellow",
+    background: "#eed11a",
     paddingTop: "30px",
     paddingBottom: "6px",
     width: "-webkit-fill-available",

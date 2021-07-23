@@ -1,5 +1,6 @@
 import React from "react";
 import { makeStyles } from "@material-ui/core";
+import clsx from "clsx";
 
 // import cleanCode from "./../cle";
 import "./App.css";
@@ -13,6 +14,80 @@ function Header() {
         <p className={classes.titleHeader}>
           <span id="name"></span>
         </p>
+      </div>
+      <div className={classes.wrapContainer}>
+        <div className={classes.wrap}>
+          <div className={clsx(classes.block, classes.style1)}></div>
+          <div className={clsx(classes.block, classes.style2)}></div>
+          <div className={clsx(classes.block, classes.style3)}></div>
+          <div className={clsx(classes.block, classes.style4)}></div>
+          <div className={clsx(classes.block, classes.style5)}></div>
+          <div className={clsx(classes.block, classes.style6)}></div>
+          <div className={clsx(classes.block, classes.style7)}></div>
+          <div className={clsx(classes.block, classes.style8)}></div>
+          <div className={clsx(classes.block, classes.style1)}></div>
+          <div className={clsx(classes.block, classes.style2)}></div>
+          <div className={clsx(classes.block, classes.style3)}></div>
+          <div className={clsx(classes.block, classes.style4)}></div>
+          <div className={clsx(classes.block, classes.style5)}></div>
+          <div className={clsx(classes.block, classes.style6)}></div>
+          <div className={clsx(classes.block, classes.style7)}></div>
+          <div className={clsx(classes.block, classes.style8)}></div>
+        </div>
+        <div className={classes.wrap}>
+          <div className={clsx(classes.block, classes.style8)}></div>
+          <div className={clsx(classes.block, classes.style7)}></div>
+          <div className={clsx(classes.block, classes.style6)}></div>
+          <div className={clsx(classes.block, classes.style5)}></div>
+          <div className={clsx(classes.block, classes.style4)}></div>
+          <div className={clsx(classes.block, classes.style3)}></div>
+          <div className={clsx(classes.block, classes.style2)}></div>
+          <div className={clsx(classes.block, classes.style1)}></div>
+          <div className={clsx(classes.block, classes.style1)}></div>
+          <div className={clsx(classes.block, classes.style2)}></div>
+          <div className={clsx(classes.block, classes.style3)}></div>
+          <div className={clsx(classes.block, classes.style4)}></div>
+          <div className={clsx(classes.block, classes.style5)}></div>
+          <div className={clsx(classes.block, classes.style6)}></div>
+          <div className={clsx(classes.block, classes.style7)}></div>
+          <div className={clsx(classes.block, classes.style8)}></div>
+        </div>
+        <div className={classes.wrap}>
+          <div className={clsx(classes.block, classes.style1)}></div>
+          <div className={clsx(classes.block, classes.style2)}></div>
+          <div className={clsx(classes.block, classes.style3)}></div>
+          <div className={clsx(classes.block, classes.style4)}></div>
+          <div className={clsx(classes.block, classes.style5)}></div>
+          <div className={clsx(classes.block, classes.style6)}></div>
+          <div className={clsx(classes.block, classes.style7)}></div>
+          <div className={clsx(classes.block, classes.style8)}></div>
+          <div className={clsx(classes.block, classes.style8)}></div>
+          <div className={clsx(classes.block, classes.style7)}></div>
+          <div className={clsx(classes.block, classes.style6)}></div>
+          <div className={clsx(classes.block, classes.style5)}></div>
+          <div className={clsx(classes.block, classes.style4)}></div>
+          <div className={clsx(classes.block, classes.style3)}></div>
+          <div className={clsx(classes.block, classes.style2)}></div>
+          <div className={clsx(classes.block, classes.style1)}></div>
+        </div>
+        <div className={classes.wrap}>
+          <div className={clsx(classes.block, classes.style1)}></div>
+          <div className={clsx(classes.block, classes.style2)}></div>
+          <div className={clsx(classes.block, classes.style3)}></div>
+          <div className={clsx(classes.block, classes.style4)}></div>
+          <div className={clsx(classes.block, classes.style5)}></div>
+          <div className={clsx(classes.block, classes.style6)}></div>
+          <div className={clsx(classes.block, classes.style7)}></div>
+          <div className={clsx(classes.block, classes.style8)}></div>
+          <div className={clsx(classes.block, classes.style1)}></div>
+          <div className={clsx(classes.block, classes.style2)}></div>
+          <div className={clsx(classes.block, classes.style3)}></div>
+          <div className={clsx(classes.block, classes.style4)}></div>
+          <div className={clsx(classes.block, classes.style5)}></div>
+          <div className={clsx(classes.block, classes.style6)}></div>
+          <div className={clsx(classes.block, classes.style7)}></div>
+          <div className={clsx(classes.block, classes.style8)}></div>
+        </div>
       </div>
       <div className={classes.infoContainer}>
         {/* <img
@@ -215,7 +290,7 @@ const useStyles = makeStyles((theme) => ({
     paddingBottom: "1vmin",
     textAlign: "center",
     // color: "yellow",
-    background: "yellow",
+    background: "#eed11a",
     color: "black",
     // width: "fit-content",
     width: "320px",
@@ -229,12 +304,69 @@ const useStyles = makeStyles((theme) => ({
       },
     },
   },
+  wrapContainer: {
+    display: "grid",
+    gridTemplateColumns: "repeat(4, 1fr)",
+    overflow: "hidden",
+  },
+  wrap: {
+    background: "#333",
+    // marginTop: "50px",
+    // marginBottom: "50px",
+    width: "500px",
+    // borderRadius: "5px",
+    overflow: "hidden",
+    display: "grid",
+    gridTemplateColumns: "repeat(4, 1fr)",
+  },
+  block: {
+    width: "125px",
+    height: "125px",
+  },
+  style1: {
+    background: "#454547",
+  },
+  style2: {
+    width: 0,
+    height: 0,
+    border: "62px solid #333",
+    borderTopColor: "#aeafb3",
+    borderBottomColor: "#aeafb3",
+    background: "#aeafb3",
+    paddingTop: "1px",
+  },
+  style3: {
+    backgroundImage: "linear-gradient(135deg, #eed11a 50%, #dbdbdd 50%)",
+  },
+  style4: {
+    backgroundImage: "linear-gradient(#333, #333 7px, #454547 7px, #454547)",
+    backgroundSize: "100% 14px",
+  },
+  style5: {
+    backgroundImage: "linear-gradient(45deg, #eec71a 50%, #333 50%)",
+  },
+  style6: {
+    backgroundImage:
+      "linear-gradient(135deg, #454547 50%, transparent 50%), linear-gradient(#333,#333 7px,#454547 7px,#454547)",
+    backgroundSize: "100%, 100% 14px",
+  },
+  style7: {
+    background:
+      "linear-gradient(45deg, #dbdbdd 50%, transparent 50%), radial-gradient(#454547 4px, transparent 4px), radial-gradient(#454547 4px, transparent 4px), transparent",
+    backgroundSize: "100%, 24px 24px, 24px 24px, 100%",
+    backgroundPosition: "0 0, -2px 6px, 10px 18px, 0 0",
+  },
+  style8: {
+    backgroundImage: "linear-gradient(315deg, #eec71a 50%, #333 50%)",
+  },
   infoContainer: {
     height: "15em",
     display: "flex",
-    backgroundImage: "url(/paperblackbackground.png)",
+    // backgroundRepeatY: "no-repeat",
+    // backgroundSize: "100%",
+    // backgroundImage: "url(/paperblackbackground.svg)",
     // backdropFilter: "contrast(1.3)",
-    background: "top",
+    // background: "top",
     alignItems: "center",
     flexDirection: "column",
     justifyContent: "space-evenly",
@@ -289,7 +421,7 @@ const useStyles = makeStyles((theme) => ({
       fontWeight: "500",
       fontSize: "15px",
       padding: "10px 20px",
-      background: "transparent",
+      // background: "transparent",
     },
   },
   spanVariableAnimation: {
