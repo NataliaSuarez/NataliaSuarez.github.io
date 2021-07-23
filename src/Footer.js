@@ -1,5 +1,6 @@
 import React from "react";
 import { makeStyles } from "@material-ui/core";
+import clsx from "clsx";
 
 import hands from "./desing/hands-heart.svg";
 import "./App.css";
@@ -7,7 +8,10 @@ import "./App.css";
 function Footer() {
   const classes = useStyles();
   return (
-    <section className="background-gray-3" alt="Footer">
+    <section
+      className={clsx("background-gray-3", classes.section)}
+      alt="Footer"
+    >
       <div className={classes.footerContainer}>
         <div className={classes.footerImage}>
           <div className={classes.imageContainer}>
@@ -74,6 +78,10 @@ function Footer() {
 export default Footer;
 
 const useStyles = makeStyles((theme) => ({
+  section: {
+    minHeight: "100vh",
+    justifyContent: "center",
+  },
   footerContainer: {
     // padding: "15vmin",
     display: "flex",

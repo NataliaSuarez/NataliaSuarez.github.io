@@ -1,5 +1,6 @@
 import React from "react";
 import { makeStyles } from "@material-ui/core";
+import clsx from "clsx";
 
 import Timeline from "@material-ui/lab/Timeline";
 import TimelineItem from "@material-ui/lab/TimelineItem";
@@ -14,7 +15,12 @@ import "./App.css";
 const Experience = () => {
   const classes = useStyles();
   return (
-    <div className="background-gray-3 column justify-start fz-5 color-gray-dark padding-v-small">
+    <div
+      className={clsx(
+        "background-gray-3 column justify-start fz-5 color-gray-dark padding-v-small",
+        classes.section
+      )}
+    >
       <div className="padding-vmin-v-small justify-s-between">
         <p className={classes.hightlightedText}>
           <strong>&gt;</strong> experience
@@ -68,6 +74,10 @@ const Experience = () => {
 export default Experience;
 
 const useStyles = makeStyles((theme) => ({
+  section: {
+    minHeight: "100vh",
+    justifyContent: "center",
+  },
   radarContainer: {
     justifyContent: "center",
     display: "contents",
@@ -103,7 +113,7 @@ const useStyles = makeStyles((theme) => ({
   titleTimelineContent: {
     fontSize: "13px !important",
     fontWeight: "200",
-    backgroundImage: "url(/pieceofpaper.png)",
+    background: "red",
     backgroundSize: "470px 150px",
     width: "470px",
     height: "150px",
@@ -143,8 +153,7 @@ const useStyles = makeStyles((theme) => ({
     backgroundPositionX: "center",
     backgroundPositionY: "center",
     // background: "fixed",
-    backgroundImage: "url(/paperblackbackground.png)",
-    // maxWidth: "100px !important",
+    background: "red", // maxWidth: "100px !important",
     height: "100px",
   },
   oppositeContentDate: {

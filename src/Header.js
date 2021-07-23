@@ -190,13 +190,13 @@ const useStyles = makeStyles((theme) => ({
     },
   },
   headerContainer: {
-    //background-gray-3 column justify-start color-white padding-v-small fz-1
+    minHeight: "100vh",
+    justifyContent: "center",
     color: "#fafafa",
     display: "flex",
     padding: "3em 0 2.5em 0",
     background: "#0c0c0c",
     flexDirection: "column",
-    justifyContent: "flex-start",
   },
   titleContainer: {
     display: "flex",
@@ -232,9 +232,7 @@ const useStyles = makeStyles((theme) => ({
   infoContainer: {
     height: "15em",
     display: "flex",
-    backgroundImage: "url(/paperblackbackground.png)",
-    // backdropFilter: "contrast(1.3)",
-    background: "top",
+    background: "red", // backdropFilter: "contrast(1.3)",
     alignItems: "center",
     flexDirection: "column",
     justifyContent: "space-evenly",
