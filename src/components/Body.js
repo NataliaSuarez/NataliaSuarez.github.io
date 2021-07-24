@@ -2,8 +2,8 @@ import React from "react";
 import { makeStyles } from "@material-ui/core";
 import clsx from "clsx";
 
-import Experience from "./Experience";
-import "./App.css";
+import Experience from "./sections/Experience";
+import "../App.css";
 
 const AboutMe = () => {
   const classes = useStyles();
@@ -82,7 +82,7 @@ const useStyles = makeStyles((theme) => ({
     fontWeight: "600",
     fontSize: "26px",
     paddingBottom: "1vmin",
-    background: "yellow",
+    background: "white",
     color: "black",
     width: "fit-content",
   },

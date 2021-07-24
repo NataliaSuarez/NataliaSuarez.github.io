@@ -2,8 +2,8 @@ import React from "react";
 import { makeStyles } from "@material-ui/core";
 import clsx from "clsx";
 
-import hands from "./desing/hands-heart.svg";
-import "./App.css";
+import hands from "../desing/hands-heart.svg";
+import "../App.css";
 
 function Footer() {
   const classes = useStyles();

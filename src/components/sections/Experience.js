@@ -9,8 +9,8 @@ import TimelineOppositeContent from "@material-ui/lab/TimelineOppositeContent";
 import Accordion from "@material-ui/core/Accordion";
 import AccordionSummary from "@material-ui/core/AccordionSummary";
 import AccordionDetails from "@material-ui/core/AccordionDetails";
-import experience from "./data/experience";
-import "./App.css";
+import experience from "../../data/experience";
+import "../../App.css";
 
 const Experience = () => {
   const classes = useStyles();
