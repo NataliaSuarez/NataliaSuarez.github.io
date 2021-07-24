@@ -16,43 +16,22 @@ const AboutMe = () => {
     >
       <div className="row-custom">
         <div className="padding-vmin-v-small justify-s-between">
-          <p className={classes.hightlightedText}>
-            <strong>&gt;</strong> about me
+          <p className={classes.hightlightedText}>&gt; about me</p>
+          <p className={classes.descriptionText}>
+            <div>
+              I've been a backend developer programming on Django and Symfony
+              and I've had fun learning Node last year.
+            </div>
+            <div>Now, I'm developing on frontend in React project.</div>
           </p>
           <p className={classes.descriptionText}>
-            I've been a backend developer programming in Django and Symfony and
-            I've had fun learning Node last year. I'm new developing on
-            frontend, I'm woking on React projects now and I'm excited about
-            learning this framework!
-          </p>
-          <p className={classes.descriptionText}>
-            I think collective projects are a wonderful way to work in groups of
-            people where we can share experiences and knowledge.
-          </p>
-          <p className={classes.descriptionText}>
-            I'm also interested in art, free software & technical challenges.
-            That's why I'm playing with{" "}
-            <a
-              href="https://hydra.ojack.xyz/"
-              className="color-gray-strong color-gray-strong-link"
-            >
-              Hydra
-            </a>
-            ,{" "}
-            <a
-              href="https://minimaxir.com/2020/01/twitter-gpt2-bot/"
-              className="color-gray-strong color-gray-strong-link"
-            >
-              GTP-2
-            </a>{" "}
-            (
-            <a
-              href="https://texts.natdeveloper.com/"
-              className="color-gray-strong color-gray-strong-link"
-            >
-              Spinetta text generator AI
-            </a>
-            ) and other art-tech tools.
+            <div>
+              I think collective projects are a wonderful way to work in groups
+              of people where we can share experiences and knowledge.
+            </div>
+            <div>
+              I'm also interested in art, free software & technical challenges.
+            </div>
           </p>
         </div>
       </div>
@@ -83,20 +62,30 @@ const useStyles = makeStyles((theme) => ({
     fontWeight: "600",
     fontSize: "26px",
     paddingBottom: "1vmin",
-    background: "white",
-    color: "black",
+    color: "rgba(144,42,172,1)",
     width: "fit-content",
+    [`@media(min-width: 700px)`]: {
+      fontSize: "32px",
+    },
+    [`@media(min-width: 1200px)`]: {
+      fontWeight: "700",
+      fontSize: "36px",
+    },
   },
   //fz-4 padding-small color-gray-strong
   descriptionText: {
     margin: 0,
     fontWeight: "300",
     fontSize: "16px",
-    padding: "1vmin",
+    padding: "12px 2px 12px 2px",
     color: "#333",
-    "&:hover": {
-      color: "#333",
+    [`@media(min-width: 700px)`]: {
       fontWeight: "400",
+      fontSize: "20px",
+    },
+    [`@media(min-width: 1200px)`]: {
+      fontWeight: "400",
+      fontSize: "24px",
     },
   },
 }));
