@@ -210,7 +210,8 @@ const useStyles = makeStyles((theme) => ({
     filter: "blur(1px) grayscale(1)",
     opacity: "35%",
     maskImage: "linear-gradient(to bottom, rgba(0,0,0,1), rgba(0,0,0,0))",
-    position: "fixed",
+    overflow: "hidden",
+    objectFit: "cover",
   },
   titleHeader: {
     margin: 0,
