@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { makeStyles } from "@material-ui/core";
 import Grid from "@material-ui/core/Grid";
 import ButtonBase from "@material-ui/core/ButtonBase";
@@ -6,42 +6,66 @@ import ButtonBase from "@material-ui/core/ButtonBase";
 import clsx from "clsx";
 import experience from "../../data/experience";
 import "../../App.css";
+import ExperienceDialog from "./ExperienceDialog";
 
 const Experience = () => {
   const classes = useStyles();
+  const [dialogOpen, setDialogOpen] = useState(false);
+  const [selectedExperience, setSelectedExperience] = useState(null);
+
+  const handleClick = (experience) => {
+    setDialogOpen(true);
+    setSelectedExperience(experience);
+  };
+  const handleClose = () => {
+    setDialogOpen(false);
+  };
+
   return (
-    <div
-      className={clsx(
-        "column justify-start fz-5 color-gray-dark padding-v-small",
-        classes.section
-      )}
-    >
-      <p className={classes.hightlightedText}>&gt; experience</p>
-      <div className={classes.gridContainer}>
-        <Grid container xs={12} classes={{ container: classes.justifyCenter }}>
+    <>
+      <div
+        className={clsx(
+          "column justify-start fz-5 color-gray-dark padding-v-small",
+          classes.section
+        )}
+      >
+        <p className={classes.hightlightedText}>&gt; experience</p>
+        <div className={classes.gridContainer}>
           <Grid
             container
-            item
-            spacing={1}
+            xs={12}
             classes={{ container: classes.justifyCenter }}
           >
-            {experience.map((e) => (
-              <Grid key={e.id} item>
-                <ButtonBase
-                  focusRipple
-                  key={e.id}
-                  className={classes.experienceContainer}
-                  focusVisibleClassName={classes.focusVisible}
-                >
-                  <div className={classes.dateText}>{e.date}</div>
-                  <span className={classes.infoText}>{e.data}</span>
-                </ButtonBase>
-              </Grid>
-            ))}
+            <Grid
+              container
+              item
+              spacing={1}
+              classes={{ container: classes.justifyCenter }}
+            >
+              {experience.map((e) => (
+                <Grid key={e.id} item>
+                  <ButtonBase
+                    focusRipple
+                    key={e.id}
+                    className={classes.experienceContainer}
+                    focusVisibleClassName={classes.focusVisible}
+                    onClick={() => handleClick(e)}
+                  >
+                    <div className={classes.dateText}>{e.date}</div>
+                    <span className={classes.infoText}>{e.data}</span>
+                  </ButtonBase>
+                </Grid>
+              ))}
+            </Grid>
           </Grid>
-        </Grid>
+        </div>
       </div>
-    </div>
+      <ExperienceDialog
+        open={dialogOpen}
+        onClose={handleClose}
+        selectedExperience={selectedExperience}
+      />
+    </>
   );
 };
 
