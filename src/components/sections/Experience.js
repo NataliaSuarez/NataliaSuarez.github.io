@@ -1,14 +1,9 @@
 import React from "react";
 import { makeStyles } from "@material-ui/core";
-import clsx from "clsx";
+import Grid from "@material-ui/core/Grid";
+import ButtonBase from "@material-ui/core/ButtonBase";
 
-import Timeline from "@material-ui/lab/Timeline";
-import TimelineItem from "@material-ui/lab/TimelineItem";
-import TimelineContent from "@material-ui/lab/TimelineContent";
-import TimelineOppositeContent from "@material-ui/lab/TimelineOppositeContent";
-import Accordion from "@material-ui/core/Accordion";
-import AccordionSummary from "@material-ui/core/AccordionSummary";
-import AccordionDetails from "@material-ui/core/AccordionDetails";
+import clsx from "clsx";
 import experience from "../../data/experience";
 import "../../App.css";
 
@@ -17,55 +12,34 @@ const Experience = () => {
   return (
     <div
       className={clsx(
-        "background-gray-3 column justify-start fz-5 color-gray-dark padding-v-small",
+        "column justify-start fz-5 color-gray-dark padding-v-small",
         classes.section
       )}
     >
-      <div className="padding-vmin-v-small justify-s-between">
-        <p className={classes.hightlightedText}>
-          <strong>&gt;</strong> experience
-        </p>
-        <div className="desktop-flex">
-          <Timeline align="alternate" className={classes.timeLineContainer}>
-            {experience.map((e) => {
-              return (
-                <Accordion key={e.id}>
-                  <AccordionSummary>
-                    <TimelineItem className={classes.timeLineItem}>
-                      <TimelineOppositeContent
-                        className={classes.oppositeContent}
-                      >
-                        <p
-                          color="textSecondary"
-                          className={classes.oppositeContentDate}
-                        >
-                          {e.date}
-                        </p>
-                      </TimelineOppositeContent>
-                      <div className={classes.separator}></div>
-                      <TimelineContent>
-                        <p className={classes.roleText}>
-                          <strong>{e.position}</strong>
-                        </p>
-                        <p className={classes.projectNameText}>
-                          <strong>{e.name}</strong>
-                        </p>
-                        <p className={classes.techContent}>
-                          {e.tech.map((t) => (
-                            <span key={t.toString()}> {t.toString()} </span>
-                          ))}
-                        </p>
-                      </TimelineContent>
-                    </TimelineItem>
-                  </AccordionSummary>
-                  <AccordionDetails>
-                    <p className={classes.titleTimelineContent}>{e.data}</p>
-                  </AccordionDetails>
-                </Accordion>
-              );
-            })}
-          </Timeline>
-        </div>
+      <p className={classes.hightlightedText}>&gt; experience</p>
+      <div className={classes.gridContainer}>
+        <Grid container xs={12} classes={{ container: classes.justifyCenter }}>
+          <Grid
+            container
+            item
+            spacing={1}
+            classes={{ container: classes.justifyCenter }}
+          >
+            {experience.map((e) => (
+              <Grid key={e.id} item>
+                <ButtonBase
+                  focusRipple
+                  key={e.id}
+                  className={classes.experienceContainer}
+                  focusVisibleClassName={classes.focusVisible}
+                >
+                  <div className={classes.dateText}>{e.date}</div>
+                  <span className={classes.infoText}>{e.data}</span>
+                </ButtonBase>
+              </Grid>
+            ))}
+          </Grid>
+        </Grid>
       </div>
     </div>
   );
@@ -76,100 +50,90 @@ export default Experience;
 const useStyles = makeStyles((theme) => ({
   section: {
     minHeight: "100vh",
-    justifyContent: "center",
+    justifyContent: "max-content",
+    background: "#fafafa",
   },
-  radarContainer: {
-    justifyContent: "center",
-    display: "contents",
-    padding: "1vmin",
-    "& svg": {
-      marginBottom: "20px",
-      alignSelf: "center",
+  gridContainer: {
+    paddingTop: "10px",
+    flexGrow: 1,
+    display: "flex",
+    alignItems: "center",
+    [`@media(min-width: 1200px)`]: {
+      padding: "0 100px",
     },
   },
-  radarSkillName: {
-    alignSelf: "center",
-    marginTop: "20px",
-    fontSize: "20px",
-  },
-  hidden: {
-    display: "none",
-  },
-  timeLineContainer: {
-    // width: "fit-content !important",
-    // "& div:first-child": {
-    //   padding: "1em !important",
-    // },
-    "& div:last-child": {
-      padding: "0 !important",
-    },
-  },
-  separator: {
-    // borderRight: "1px solid #cecbcb",
-  },
-  timeLineItem: {
-    margin: 0,
-  },
-  titleTimelineContent: {
-    fontSize: "13px !important",
-    fontWeight: "200",
-    background: "red",
-    backgroundSize: "470px 150px",
-    width: "470px",
-    height: "150px",
-    padding: "29px 13px",
-    // color: "#333",
+  experienceContainer: {
+    display: "flex",
+    flexDirection: "column",
+    alignItems: "flex-start",
+    justifyContent: "flex-start",
+    height: "calc(100vh/5)",
+    width: "calc(100vh/5)",
+    padding: "6px",
+    cursor: "default",
     overflow: "hidden",
-    // textOverflow: "ellipsis",
-    wordBreak: "break-word",
-    display: "-webkit-box",
-    "-webkit-line-clamp": 5,
-    "-webkit-box-orient": "vertical",
+    "&:hover": {
+      backgroundColor: "gray",
+      opacity: 0.1,
+      transition: theme.transitions.create("opacity"),
+    },
+    "&:focus": {
+      outline: "none",
+    },
+    [`@media(min-width: 700px)`]: {
+      padding: "12px",
+    },
   },
-  roleText: {
-    margin: 0,
-    fontSize: "14px",
-    fontWeight: "500",
-    color: "yellow",
-    // width: "fit-content",
-    paddingLeft: "15px",
+  imageBackdrop: {
+    backgroundColor: theme.palette.common.black,
+    opacity: 0.4,
+    transition: theme.transitions.create("opacity"),
+    "&:hover": {
+      opacity: 0.15,
+    },
   },
-  projectNameText: {
-    margin: 0,
-    paddingLeft: "15px",
-    fontSize: "14px",
+  focusVisible: {},
+  justifyCenter: {
+    justifyContent: "center",
+  },
+  dateText: {
+    color: "#333",
+    fontSize: "18px",
+    fontWeight: "400",
+    borderBottom: "2px solid rgba(144,42,172,1)",
+    whiteSpace: "nowrap",
+    width: "100%",
+    textAlign: "start",
+    marginBottom: "4px",
+    [`@media(min-width: 700px)`]: {
+      fontSize: "23px",
+      marginBottom: "10px",
+    },
+  },
+  infoText: {
+    color: "#333",
+    fontSize: "9px",
     fontWeight: "300",
-    color: "white",
-  },
-  techContent: {
-    margin: 0,
-    paddingLeft: "15px",
-    fontSize: "14px",
-    fontWeight: "500",
-    color: "gainsboro",
-  },
-  oppositeContent: {
-    // backgroundColor: "#01a029",
-    backgroundPositionX: "center",
-    backgroundPositionY: "center",
-    // background: "fixed",
-    background: "red", // maxWidth: "100px !important",
-    height: "100px",
-  },
-  oppositeContentDate: {
-    fontWeight: "300",
-    color: "black",
-    background: "white",
-    fontSize: "26px",
-    width: "min-content",
+    [`@media(min-width: 700px)`]: {
+      fontSize: "10px",
+    },
+    [`@media(min-width: 1200px)`]: {
+      fontSize: "12px",
+    },
   },
   hightlightedText: {
     margin: 0,
     fontWeight: "600",
     fontSize: "26px",
     paddingBottom: "1vmin",
-    background: "yellow",
-    color: "black",
+    color: "rgba(144,42,172,1)",
     width: "fit-content",
+    [`@media(min-width: 700px)`]: {
+      fontSize: "32px",
+    },
+    [`@media(min-width: 1200px)`]: {
+      fontWeight: "700",
+      fontSize: "36px",
+    },
   },
 }));

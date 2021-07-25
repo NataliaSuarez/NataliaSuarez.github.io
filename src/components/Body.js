@@ -43,7 +43,7 @@ function Body() {
   return (
     <div>
       <AboutMe />
-      {/* <Experience /> */}
+      <Experience />
     </div>
   );
 }
