@@ -72,10 +72,18 @@ const useStyles = makeStyles((theme) => ({
     padding: "6px",
     cursor: "default",
     overflow: "hidden",
+    transition: theme.transitions.create(["background-color", "transform"]),
     "&:hover": {
-      backgroundColor: "gray",
-      opacity: 0.1,
-      transition: theme.transitions.create("opacity"),
+      // backgroundColor: "white",
+      // transform: "scale(1.2)",
+      backgroundColor: "rgba(144,42,172,1)",
+      "& div": {
+        color: "white",
+        borderBottom: "2px solid white",
+      },
+      "& span": {
+        color: "white",
+      },
     },
     "&:focus": {
       outline: "none",
@@ -85,12 +93,12 @@ const useStyles = makeStyles((theme) => ({
     },
   },
   imageBackdrop: {
-    backgroundColor: theme.palette.common.black,
-    opacity: 0.4,
-    transition: theme.transitions.create("opacity"),
-    "&:hover": {
-      opacity: 0.15,
-    },
+    // backgroundColor: theme.palette.common.black,
+    // opacity: 0.4,
+    // transition: theme.transitions.create("opacity"),
+    // "&:hover": {
+    //   opacity: 0.15,
+    // },
   },
   focusVisible: {},
   justifyCenter: {
