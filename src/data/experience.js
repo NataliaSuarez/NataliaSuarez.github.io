@@ -2,7 +2,7 @@ const experience = [
   {
     id: "12",
     date: "Dec 2020",
-    position: "Software Development Engineer (Currently)",
+    position: "Software Development Engineer", // currently
     name: "Blue Alba",
     tech: ["Javascript", "React"],
     data:
