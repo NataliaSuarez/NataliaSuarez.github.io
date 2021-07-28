@@ -145,9 +145,17 @@ const useStyles = makeStyles((theme) => ({
   //     isSelected && "1px solid rgba(144,42,172,0.7) !important",
   // },
   chipRoot: {
+    fontFamily: '"Raleway", sans-serif',
+    border: "1px solid rgba(144,42,172,0.7) !important",
     margin: "3px",
     backgroundColor: ({ isSelected }) => isSelected && "rgba(144,42,172,0.3)",
     color: ({ isSelected }) => isSelected && "rgba(144,42,172,1)",
+    "& svg": {
+      color: "rgba(144,42,172,0.7)",
+      "&:hover": {
+        color: "rgba(144,42,172,0.3)",
+      },
+    },
   },
   techFilterContainer: {
     // display: "flow-root",
