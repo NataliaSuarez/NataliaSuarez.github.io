@@ -1,24 +1,79 @@
-import React, { useState } from "react";
+import React, { useState, useMemo } from "react";
 import { makeStyles } from "@material-ui/core";
 import Grid from "@material-ui/core/Grid";
 import ButtonBase from "@material-ui/core/ButtonBase";
+import Chip from "@material-ui/core/Chip";
 
 import clsx from "clsx";
 import experience from "../../data/experience";
 import "../../App.css";
 import ExperienceDialog from "./ExperienceDialog";
 
+const TechFilterButton = ({ tech, onAdd, onRemove }) => {
+  const [isSelected, setSelected] = useState(false);
+  const classes = useStyles({ isSelected });
+
+  return (
+    <Chip
+      key={tech}
+      size="small"
+      label={tech}
+      variant="outlined"
+      clickable
+      onClick={() => {
+        onAdd(tech);
+        setSelected(true);
+      }}
+      onDelete={() => {
+        onRemove(tech);
+        setSelected(false);
+      }}
+      // className={classes.chip}
+      classes={{
+        root: classes.chipRoot,
+        colorPrimary: classes.chipColorPrimary,
+      }}
+    />
+  );
+};
+
 const Experience = () => {
   const classes = useStyles();
   const [dialogOpen, setDialogOpen] = useState(false);
   const [selectedExperience, setSelectedExperience] = useState(null);
+  const [selectedTechs, setSelectedTech] = useState([]);
 
+  const techs = useMemo(
+    () =>
+      experience.reduce(
+        (acc, c) => [...acc, ...c.tech.filter((t) => !acc.includes(t))],
+        []
+      ),
+    []
+  );
+
+  const filterExperienceList = experience.filter((e) => {
+    return e.tech.some((t) => selectedTechs.includes(t));
+  });
+  const filteredExperience =
+    filterExperienceList.length > 0 ? filterExperienceList : experience;
+
+  /// HANDLE DIALOG
   const handleClick = (experience) => {
     setDialogOpen(true);
     setSelectedExperience(experience);
   };
   const handleClose = () => {
     setDialogOpen(false);
+  };
+
+  /// HANDLE SELECTED TECHS TO FILTER
+  const handleAddTech = (tech) => {
+    if (!selectedTechs.includes(tech))
+      setSelectedTech([...selectedTechs, tech]);
+  };
+  const handleRemoveTech = (tech) => {
+    setSelectedTech(selectedTechs.filter((t) => t !== tech));
   };
 
   return (
@@ -29,20 +84,28 @@ const Experience = () => {
           classes.section
         )}
       >
-        <p className={classes.hightlightedText}>&gt; experience</p>
+        <div>
+          <div className={classes.hightlightedText}>&gt; experience</div>
+        </div>
+        <div className={classes.techFilterContainer}>
+          {techs.map((tech) => (
+            <TechFilterButton
+              key={tech}
+              tech={tech}
+              onAdd={handleAddTech}
+              onRemove={handleRemoveTech}
+            />
+          ))}
+        </div>
         <div className={classes.gridContainer}>
-          <Grid
-            container
-            xs={12}
-            classes={{ container: classes.justifyCenter }}
-          >
+          <Grid container classes={{ container: classes.justifyCenter }}>
             <Grid
               container
               item
               spacing={1}
               classes={{ container: classes.justifyCenter }}
             >
-              {experience.map((e) => (
+              {filteredExperience.map((e) => (
                 <Grid key={e.id} item>
                   <ButtonBase
                     focusRipple
@@ -76,6 +139,23 @@ const useStyles = makeStyles((theme) => ({
     minHeight: "100vh",
     justifyContent: "max-content",
     background: "#fafafa",
+  },
+  // chip: {
+  //   border: ({ isSelected }) =>
+  //     isSelected && "1px solid rgba(144,42,172,0.7) !important",
+  // },
+  chipRoot: {
+    margin: "3px",
+    backgroundColor: ({ isSelected }) => isSelected && "rgba(144,42,172,0.3)",
+    color: ({ isSelected }) => isSelected && "rgba(144,42,172,1)",
+  },
+  techFilterContainer: {
+    // display: "flow-root",
+    marginTop: "10px",
+    marginBottom: "10px",
+    justifyContent: "center",
+    width: "90%",
+    alignSelf: "center",
   },
   gridContainer: {
     paddingTop: "10px",

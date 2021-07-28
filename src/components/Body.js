@@ -16,15 +16,15 @@ const AboutMe = () => {
     >
       <div className="row-custom">
         <div className="padding-vmin-v-small justify-s-between">
-          <p className={classes.hightlightedText}>&gt; about me</p>
-          <p className={classes.descriptionText}>
+          <div className={classes.hightlightedText}>&gt; about me</div>
+          <div className={classes.descriptionText}>
             <div>
               I've been a backend developer programming on Django and Symfony
               and I've had fun learning Node last year.
             </div>
             <div>Now, I'm developing on frontend in React project.</div>
-          </p>
-          <p className={classes.descriptionText}>
+          </div>
+          <div className={classes.descriptionText}>
             <div>
               I think collective projects are a wonderful way to work in groups
               of people where we can share experiences and knowledge.
@@ -32,7 +32,7 @@ const AboutMe = () => {
             <div>
               I'm also interested in art, free software & technical challenges.
             </div>
-          </p>
+          </div>
         </div>
       </div>
     </div>
