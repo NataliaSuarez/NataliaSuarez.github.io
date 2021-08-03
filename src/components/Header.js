@@ -191,7 +191,8 @@ const useStyles = makeStyles((theme) => ({
     flexDirection: "column",
     justifyContent: "flex-start",
     background:
-      "linear-gradient(4deg, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 0%, rgba(192,78,153,1) 12%, rgba(144,42,172,1) 29%, rgba(8,8,9,1) 68%)",
+      "linear-gradient(4deg, rgba(63,94,251,1) 0%, rgb(114 29 151) 0%, rgb(126 10 157) 12%, rgb(95 14 117) 29%, rgba(8,8,9,1) 68%)",
+    // "linear-gradient(4deg, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 0%, rgba(192,78,153,1) 12%, rgba(144,42,172,1) 29%, rgba(8,8,9,1) 68%)",
     // color: "white",
     // padding: "3em 0 2.5em 0",
     // background: "white",

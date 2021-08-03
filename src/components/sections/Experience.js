@@ -140,20 +140,24 @@ const useStyles = makeStyles((theme) => ({
     justifyContent: "max-content",
     background: "#fafafa",
   },
-  // chip: {
-  //   border: ({ isSelected }) =>
-  //     isSelected && "1px solid rgba(144,42,172,0.7) !important",
-  // },
   chipRoot: {
     fontFamily: '"Raleway", sans-serif',
     border: "1px solid rgba(144,42,172,0.7) !important",
     margin: "3px",
     backgroundColor: ({ isSelected }) => isSelected && "rgba(144,42,172,0.3)",
-    color: ({ isSelected }) => isSelected && "rgba(144,42,172,1)",
+    color: ({ isSelected }) =>
+      isSelected ? "rgba(144,42,172,1)" : "rgba(144,42,172,0.7)",
+    "&:hover": {
+      backgroundColor: "rgba(144,42,172,1) !important",
+      color: "white",
+      "& svg": {
+        color: "white",
+      },
+    },
     "& svg": {
-      color: "rgba(144,42,172,0.7)",
+      color: "rgba(144,42,172,0.6)",
       "&:hover": {
-        color: "rgba(144,42,172,0.3)",
+        color: "white",
       },
     },
   },
@@ -186,8 +190,6 @@ const useStyles = makeStyles((theme) => ({
     overflow: "hidden",
     transition: theme.transitions.create(["background-color", "transform"]),
     "&:hover": {
-      // backgroundColor: "white",
-      // transform: "scale(1.2)",
       backgroundColor: "rgba(144,42,172,1)",
       "& div": {
         color: "white",

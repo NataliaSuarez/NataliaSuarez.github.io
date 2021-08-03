@@ -2,7 +2,11 @@ import React from "react";
 import { makeStyles } from "@material-ui/core";
 import clsx from "clsx";
 
-import hands from "../desing/hands-heart.svg";
+import LinkedInIcon from "@material-ui/icons/LinkedIn";
+import GitHubIcon from "@material-ui/icons/GitHub";
+import TwitterIcon from "@material-ui/icons/Twitter";
+import AlternateEmailIcon from "@material-ui/icons/AlternateEmail";
+
 import "../App.css";
 
 function Footer() {
@@ -13,28 +17,11 @@ function Footer() {
       alt="Footer"
     >
       <div className={classes.footerContainer}>
-        <div className={classes.footerImage}>
-          <div className={classes.imageContainer}>
-            <img
-              src={hands}
-              className="height-30 align-center margin-b-small"
-              alt="logo"
-            />
-          </div>
-          <p className={classes.footerNote}>
-            {/* <p className="color-white light-300-text fz-4 italic padding-small"> */}
-            &gt; share with me new funny projects, tech challenges & new
-            knowledges :)
-          </p>
-        </div>
+        <p className={classes.footerNote}>
+          &gt; share with me new funny projects, tech challenges & new
+          knowledges :)
+        </p>
         <div className={classes.compactContainer}>
-          {/* <div className={classes.imageContainer}>
-            <img
-              src={hands}
-              className="height-30 align-center margin-b-small"
-              alt="logo"
-            />
-          </div> */}
           <div className={classes.contactLinksContainer}>
             <a
               className={classes.linkItem}
@@ -42,7 +29,7 @@ function Footer() {
               target="_blank"
               rel="noopener noreferrer"
             >
-              LINKEDIN
+              <LinkedInIcon style={{ fontSize: 40 }} />
             </a>
             <a
               className={classes.linkItem}
@@ -50,7 +37,7 @@ function Footer() {
               target="_blank"
               rel="noopener noreferrer"
             >
-              GITHUB
+              <GitHubIcon style={{ fontSize: 40 }} />
             </a>
             <a
               className={classes.linkItem}
@@ -58,7 +45,7 @@ function Footer() {
               target="_blank"
               rel="noopener noreferrer"
             >
-              TWITTER
+              <TwitterIcon style={{ fontSize: 40 }} />
             </a>
             <a
               className={classes.linkItem}
@@ -66,7 +53,7 @@ function Footer() {
               target="_blank"
               rel="noopener noreferrer"
             >
-              nat@dev
+              <AlternateEmailIcon style={{ fontSize: 40 }} />
             </a>
           </div>
         </div>
@@ -79,76 +66,45 @@ export default Footer;
 
 const useStyles = makeStyles((theme) => ({
   section: {
-    minHeight: "100vh",
-    justifyContent: "center",
+    minHeight: "50vh",
+    // background: "rgb(117 35 140)",
+    background: "#0f0f10",
+    display: "flex",
+    flexDirection: "column",
+    justifyContent: "flex-end",
   },
   footerContainer: {
-    // padding: "15vmin",
     display: "flex",
     flexDirection: "column",
     alignItems: "center",
-    backgroundImage: "url(/paperblackbackground.png)",
-    background: "bottom",
-    // justifyContent: "center",
-    // "& svg": {
-    //   marginBottom: "20px",
-    // },
+    marginBottom: "40px",
   },
   compactContainer: {
     display: "flex",
     justifyContent: "center",
     flexDirection: "column",
-    background: "yellow",
     paddingTop: "30px",
     paddingBottom: "6px",
-    width: "-webkit-fill-available",
+    // width: "-webkit-fill-available",
   },
   contactLinksContainer: {
     display: "flex",
-    // background: "yellow",
-    // paddingTop: "60px",
-    // paddingBottom: "10px",
     width: "-webkit-fill-available",
     justifyContent: "center",
   },
   linkItem: {
-    //"color-white fz-1 strong-text link-item align-init"
-    color: "#333",
-    fontSize: "9px",
-    fontWeight: "400",
+    color: "#fafafa",
     textDecoration: "unset",
     padding: "0 20px",
     "&:hover": {
-      color: "black",
-      fontWeight: "400",
+      color: "rgba(144,42,172,1)",
     },
   },
-  footerImage: {
-    display: "flex",
-    justifyContent: "center",
-    flexDirection: "column",
-    // display: "flex",
-    // background: "yellow",
-    paddingTop: "40px",
-    paddingBottom: "160px",
-    width: "-webkit-fill-available",
-    // justifyContent: "space-evenly",
-  },
-  imageContainer: {
-    display: "contents",
-    padding: "10px",
-  },
   footerNote: {
-    background: "white",
-    color: "black",
-    margin: "0 50px",
-    fontSize: "13px",
-    fontWeight: "300",
+    color: "white",
+    margin: "10px 50px",
+    fontSize: "16px",
+    fontWeight: "600",
     fontStyle: "italic",
-    textAlign: "center",
-    // padding: "1vmin",
-    width: "fit-content",
-    height: "fit-content",
-    alignSelf: "center",
   },
 }));
