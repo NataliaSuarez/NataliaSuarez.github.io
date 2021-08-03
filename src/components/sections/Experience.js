@@ -168,6 +168,10 @@ const useStyles = makeStyles((theme) => ({
     justifyContent: "center",
     width: "90%",
     alignSelf: "center",
+    height: "max-content",
+    display: "flex",
+    alignItems: "center",
+    flexFlow: "wrap",
   },
   gridContainer: {
     paddingTop: "10px",
