@@ -103,7 +103,7 @@ const useStyles = makeStyles((theme) => ({
   footerNote: {
     color: "white",
     margin: "10px 50px",
-    fontSize: "16px",
+    fontSize: "11px",
     fontWeight: "600",
     fontStyle: "italic",
   },

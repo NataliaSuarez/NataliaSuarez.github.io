@@ -3,6 +3,8 @@ import { makeStyles } from "@material-ui/core";
 
 import Button from "@material-ui/core/Button";
 import Dialog from "@material-ui/core/Dialog";
+import Chip from "@material-ui/core/Chip";
+import HighlightOffIcon from "@material-ui/icons/HighlightOff";
 
 const ExperienceDialog = ({ open, onClose, selectedExperience }) => {
   const classes = useStyles();
@@ -19,11 +21,22 @@ const ExperienceDialog = ({ open, onClose, selectedExperience }) => {
         <div id="alert-dialog-title-experience" className={classes.dialogTitle}>
           <div className={classes.roleTitle}>
             {selectedExperience?.position}
+            <HighlightOffIcon onClick={onClose} />
           </div>
           <div className={classes.projectName}>{selectedExperience?.name}</div>
           <div className={classes.techContainer}>
             {selectedExperience?.tech.map((t, i) => (
-              <div className={classes.techName}>&gt; {t}</div>
+              <div className={classes.techName}>
+                <Chip
+                  key={t}
+                  size="small"
+                  label={t}
+                  variant="outlined"
+                  classes={{
+                    root: classes.chipRoot,
+                  }}
+                />
+              </div>
             ))}
           </div>
         </div>
@@ -34,11 +47,11 @@ const ExperienceDialog = ({ open, onClose, selectedExperience }) => {
           {selectedExperience?.data}
         </div>
       </div>
-      <div className={classes.buttonsActionsContainer}>
+      {/* <div className={classes.buttonsActionsContainer}>
         <Button variant="outlined" size="small" onClick={onClose}>
           close
         </Button>
-      </div>
+      </div> */}
     </Dialog>
   );
 };
@@ -68,14 +81,21 @@ const useStyles = makeStyles((theme) => ({
     marginBottom: "10px",
     fontSize: "18px",
     fontWeight: "400",
+    display: "flex",
+    justifyContent: "space-between",
+    "& svg": {
+      color: "rgba(144,42,172,1)",
+      cursor: "pointer",
+    },
   },
   techContainer: {
-    padding: "10px 3px",
+    padding: "10px 0",
   },
   techName: {
     color: "rgba(144,42,172,1)",
     fontSize: "11px",
     fontWeight: "700",
+    display: "contents",
   },
   projectName: {
     fontSize: "15px",
@@ -83,5 +103,20 @@ const useStyles = makeStyles((theme) => ({
   },
   buttonsActionsContainer: {
     padding: "8px",
+  },
+  chipRoot: {
+    fontFamily: '"Raleway", sans-serif',
+    border: "none",
+    backgroundColor: "rgba(144,42,172,1) !important",
+    color: "white",
+    // color: "rgba(144,42,172,1)",
+    fontSize: "11px",
+    fontWeight: "400",
+    padding: "0",
+    margin: "2px",
+    "& span": {
+      paddingLeft: "6px",
+      paddingRight: "6px",
+    },
   },
 }));

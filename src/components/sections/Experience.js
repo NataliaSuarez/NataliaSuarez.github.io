@@ -31,7 +31,6 @@ const TechFilterButton = ({ tech, onAdd, onRemove }) => {
       // className={classes.chip}
       classes={{
         root: classes.chipRoot,
-        colorPrimary: classes.chipColorPrimary,
       }}
     />
   );
