@@ -4,7 +4,15 @@ const experience = [
     date: "Dec 2020",
     position: "Software Development Engineer", // currently
     name: "Blue Alba",
-    tech: ["Javascript", "React", "Redux", "Testing", "Scrum"],
+    tech: [
+      "Javascript",
+      "React",
+      "Redux",
+      "Api-REST",
+      "PostgreSQL",
+      "Testing",
+      "Scrum",
+    ],
     data:
       "My goals scored was learn to make functional components with hooks, use Redux, react-query and make functional tests.",
   },
@@ -17,6 +25,7 @@ const experience = [
       "Python",
       "Django",
       "Django REST",
+      "Api-REST",
       "Javascript",
       "React native",
       "Redux",
@@ -45,6 +54,7 @@ const experience = [
       "ReactAdmin",
       "Feathers",
       "MongoDB",
+      "Api-REST",
       "Docker",
     ],
     data:
@@ -62,6 +72,7 @@ const experience = [
       "ReactAdmin",
       "Feathers",
       "MongoDB",
+      "Api-REST",
       "Docker",
     ],
     data:
@@ -81,7 +92,14 @@ const experience = [
     date: "Jan 2020",
     position: "Full Stack Developer",
     name: "Radio App Mobile, La Minga",
-    tech: ["Python", "Django", "Django REST", "Vue Native Script", "Firebase"],
+    tech: [
+      "Python",
+      "Django",
+      "Django REST",
+      "Api-REST",
+      "Vue Native Script",
+      "Firebase",
+    ],
     data:
       "Implementation of a mobile app with its configuration on admin system, and upload to play store.",
   },
@@ -100,7 +118,7 @@ const experience = [
     // "date": "Aug 2019 - Nov 2019",
     position: "Backend Developer",
     name: "Admin Radios App, Cambá Coop",
-    tech: ["Python", "Django", "Django REST"],
+    tech: ["Python", "Django", "Django REST", "Api-REST"],
     data:
       "I've developed a Django Admin that provides a generic API for a free-software mobile application for radios.",
   },

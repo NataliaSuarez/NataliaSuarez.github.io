@@ -9,9 +9,8 @@ import experience from "../../data/experience";
 import "../../App.css";
 import ExperienceDialog from "./ExperienceDialog";
 
-const TechFilterButton = ({ tech, onAdd, onRemove }) => {
-  const [isSelected, setSelected] = useState(false);
-  const classes = useStyles({ isSelected });
+const TechFilterButton = ({ tech, onAdd, onRemove, selected }) => {
+  const classes = useStyles({ isSelected: selected });
 
   return (
     <Chip
@@ -22,11 +21,9 @@ const TechFilterButton = ({ tech, onAdd, onRemove }) => {
       clickable
       onClick={() => {
         onAdd(tech);
-        setSelected(true);
       }}
       onDelete={() => {
         onRemove(tech);
-        setSelected(false);
       }}
       // className={classes.chip}
       classes={{
@@ -51,11 +48,17 @@ const Experience = () => {
     []
   );
 
-  const filterExperienceList = experience.filter((e) => {
-    return e.tech.some((t) => selectedTechs.includes(t));
-  });
-  const filteredExperience =
-    filterExperienceList.length > 0 ? filterExperienceList : experience;
+  const filterExperienceList = useMemo(
+    () =>
+      experience.filter((e) => {
+        return e.tech.some((t) => selectedTechs.includes(t));
+      }),
+    [selectedTechs]
+  );
+  const filteredExperience = useMemo(
+    () => (filterExperienceList.length > 0 ? filterExperienceList : experience),
+    [selectedTechs]
+  );
 
   /// HANDLE DIALOG
   const handleClick = (experience) => {
@@ -84,7 +87,9 @@ const Experience = () => {
         )}
       >
         <div>
-          <div className={classes.hightlightedText}>&gt; experience</div>
+          <div className={classes.hightlightedText}>
+            &gt; experience by projects
+          </div>
         </div>
         <div className={classes.techFilterContainer}>
           {techs.map((tech) => (
@@ -93,8 +98,22 @@ const Experience = () => {
               tech={tech}
               onAdd={handleAddTech}
               onRemove={handleRemoveTech}
+              selected={selectedTechs.includes(tech)}
             />
           ))}
+          <Chip
+            size="small"
+            label="Clear all"
+            variant="outlined"
+            clickable
+            onClick={() => setSelectedTech([])}
+            onDelete={() => setSelectedTech([])}
+            classes={{
+              root: clsx(classes.clearAllChipRoot, {
+                [classes.hidden]: selectedTechs.length === 0,
+              }),
+            }}
+          />
         </div>
         <div className={classes.gridContainer}>
           <Grid container classes={{ container: classes.justifyCenter }}>
@@ -155,6 +174,31 @@ const useStyles = makeStyles((theme) => ({
     },
     "& svg": {
       display: ({ isSelected }) => !isSelected && "none",
+      color: "rgba(144,42,172,0.6)",
+      "&:hover": {
+        color: "white",
+      },
+    },
+  },
+  hidden: {
+    display: "none",
+  },
+  clearAllChipRoot: {
+    fontFamily: '"Raleway", sans-serif',
+    border: "1px solid rgba(144,42,172,0.7) !important",
+    margin: "3px",
+    textTransform: "uppercase",
+    backgroundColor: ({ isSelected }) => isSelected && "rgba(144,42,172,0.3)",
+    color: ({ isSelected }) =>
+      isSelected ? "rgba(144,42,172,1)" : "rgba(144,42,172,0.7)",
+    "&:hover": {
+      backgroundColor: "rgba(144,42,172,1) !important",
+      color: "white",
+      "& svg": {
+        color: "white",
+      },
+    },
+    "& svg": {
       color: "rgba(144,42,172,0.6)",
       "&:hover": {
         color: "white",
