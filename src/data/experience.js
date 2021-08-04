@@ -4,7 +4,7 @@ const experience = [
     date: "Dec 2020",
     position: "Software Development Engineer", // currently
     name: "Blue Alba",
-    tech: ["Javascript", "React"],
+    tech: ["Javascript", "React", "Redux", "Testing", "Scrum"],
     data:
       "My goals scored was learn to make functional components with hooks, use Redux, react-query and make functional tests.",
   },
@@ -13,7 +13,15 @@ const experience = [
     date: "Oct 2020",
     position: "Full Stack Developer",
     name: "Revolución de lxs viejxs",
-    tech: ["Python", "Django", "Javascript", "React native"],
+    tech: [
+      "Python",
+      "Django",
+      "Django REST",
+      "Javascript",
+      "React native",
+      "Redux",
+      "PostgreSQL",
+    ],
     data:
       "Project management and backend development with API-rest for mobile application. Implementation of login and render maps with react native.",
   },
@@ -31,7 +39,14 @@ const experience = [
     date: "Aug 2020",
     position: "Javascript Developer",
     name: "BI, Cambá Coop",
-    tech: ["Javascript", "React", "Feathers", "MongoDB"],
+    tech: [
+      "Javascript",
+      "React",
+      "ReactAdmin",
+      "Feathers",
+      "MongoDB",
+      "Docker",
+    ],
     data:
       "My goal scored in the project was to solve full stack tasks with Javascript.",
   },
@@ -41,7 +56,14 @@ const experience = [
     // "date": "Jul 2020 - Aug 2020",
     position: "Backend Javascript Developer",
     name: "Seguimos Educando, educ.ar",
-    tech: ["Javascript", "React", "Feathers", "MongoDB", "Docker"],
+    tech: [
+      "Javascript",
+      "React",
+      "ReactAdmin",
+      "Feathers",
+      "MongoDB",
+      "Docker",
+    ],
     data:
       "On this project I've developed a backend with ReactAdmin and make an API-rest with Node+Feathers.",
   },
@@ -56,57 +78,57 @@ const experience = [
   },
   {
     id: "6",
-    date: "Jun 2019",
-    // "date": "Jun 2019 - Jul 2020",
-    position: "Member of Turnkey projects",
-    name: "Turnkey projects, Cambá Coop",
-    tech: [],
-    data:
-      "I’m responsible for creating and solving tasks, give technical counsel to team members, keep track of sprints and deadlines and attend to client meetings.",
-  },
-  {
-    id: "5",
-    date: "Jun 2020",
+    date: "Jan 2020",
     position: "Full Stack Developer",
     name: "Radio App Mobile, La Minga",
-    tech: ["Python", "Django", "Vue Native Script", "Firebase"],
+    tech: ["Python", "Django", "Django REST", "Vue Native Script", "Firebase"],
     data:
       "Implementation of a mobile app with its configuration on admin system, and upload to play store.",
   },
   {
-    id: "4",
+    id: "5",
     date: "Dec 2019",
     position: "Full Stack Developer",
     name: "A church near you, The Developer Society",
-    tech: ["Django", "Javascript", "CSS"],
+    tech: ["Python", "Django", "Javascript"],
     data:
       "Resolved some frontend issues as a style fixes on different section on django website.",
   },
   {
-    id: "3",
+    id: "4",
     date: "Aug 2019",
     // "date": "Aug 2019 - Nov 2019",
     position: "Backend Developer",
     name: "Admin Radios App, Cambá Coop",
-    tech: ["Django", "Django REST"],
+    tech: ["Python", "Django", "Django REST"],
     data:
       "I've developed a Django Admin that provides a generic API for a free-software mobile application for radios.",
   },
   {
-    id: "2",
+    id: "3",
     date: "Jul 2019",
     position: "Frontend Developer",
     name: "Landing Accesibilidad Digital, ADC",
-    tech: ["Javascript", "Accessibility", "CSS", "HTML"],
+    tech: ["Javascript", "Accessibility"],
     data:
       "Landing-page with features of digital accessibility in terms of programming.",
+  },
+  {
+    id: "2",
+    date: "Jun 2019",
+    // "date": "Jun 2019 - Jul 2020",
+    position: "Member of Turnkey projects",
+    name: "Turnkey projects, Cambá Coop",
+    tech: ["Task estimation", "Board management", "Discover product"],
+    data:
+      "I’m responsible for creating and solving tasks, give technical counsel to team members, keep track of sprints and deadlines and attend to client meetings.",
   },
   {
     id: "1",
     date: "Jun 2019",
     position: "Frontend Developer",
     name: "Web Site, Cambá Coop",
-    tech: ["Javascript", "Vue.js", "PHP"],
+    tech: ["Javascript", "Vue", "PHP"],
     data:
       "Company presentation website custom designed using javascript libraries and developed using Vue.js.",
   },
@@ -116,7 +138,7 @@ const experience = [
     // "date": "Oct 2018 - May 2019",
     position: "PHP Backend Developer",
     name: "Application & Documents System, Municipalidad Alte. Brown",
-    tech: ["PHP", "Symfony", "Javascript"],
+    tech: ["PHP", "Symfony", "Mysql", "Api-REST", "Javascript"],
     data:
       "The development was carried out in sprits through the analysis of functionalities with implementation on Symfony.",
   },
