@@ -60,7 +60,7 @@ export default ExperienceDialog;
 
 const useStyles = makeStyles((theme) => ({
   dialogContainer: {
-    height: "450px",
+    height: "250px",
     display: "flex",
     flexDirection: "column",
     justifyContent: "space-between",
