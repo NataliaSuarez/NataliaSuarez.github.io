@@ -155,6 +155,7 @@ const useStyles = makeStyles((theme) => ({
       },
     },
     "& svg": {
+      display: ({ isSelected }) => !isSelected && "none",
       color: "rgba(144,42,172,0.6)",
       "&:hover": {
         color: "white",
