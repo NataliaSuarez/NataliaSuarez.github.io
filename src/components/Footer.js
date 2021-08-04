@@ -49,7 +49,7 @@ function Footer() {
             </a>
             <a
               className={classes.linkItem}
-              href="mailto:contact@natdeveloper.com"
+              href="mailto:suarez.nataliam@gmail.com"
               target="_blank"
               rel="noopener noreferrer"
             >
