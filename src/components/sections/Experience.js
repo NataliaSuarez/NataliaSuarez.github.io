@@ -1,13 +1,13 @@
 import React, { useState, useMemo } from "react";
 import { makeStyles } from "@material-ui/core";
 import Grid from "@material-ui/core/Grid";
-import ButtonBase from "@material-ui/core/ButtonBase";
 import Chip from "@material-ui/core/Chip";
 
 import clsx from "clsx";
 import experience from "../../data/experience";
 import "../../App.css";
 import ExperienceDialog from "./ExperienceDialog";
+import ExperienceItem from "./ExperienceItem";
 
 const TechFilterButton = ({ tech, onAdd, onRemove, selected }) => {
   const classes = useStyles({ isSelected: selected });
@@ -124,18 +124,7 @@ const Experience = () => {
               classes={{ container: classes.justifyCenter }}
             >
               {filteredExperience.map((e) => (
-                <Grid key={e.id} item>
-                  <ButtonBase
-                    focusRipple
-                    key={e.id}
-                    className={classes.experienceContainer}
-                    focusVisibleClassName={classes.focusVisible}
-                    onClick={() => handleClick(e)}
-                  >
-                    <div className={classes.dateText}>{e.date}</div>
-                    <span className={classes.infoText}>{e.data}</span>
-                  </ButtonBase>
-                </Grid>
+                <ExperienceItem experience={e} onClick={handleClick} />
               ))}
             </Grid>
           </Grid>

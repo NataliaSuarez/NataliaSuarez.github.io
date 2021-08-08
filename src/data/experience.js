@@ -3,7 +3,9 @@ const experience = [
     id: "12",
     date: "Dec 2020",
     position: "Software Development Engineer", // currently
-    name: "Blue Alba",
+    company: "Blue Alba",
+    project: "PM Expense",
+    client: "Schonfeld",
     tech: [
       "Javascript",
       "React",
@@ -20,7 +22,9 @@ const experience = [
     id: "11",
     date: "Oct 2020",
     position: "Full Stack Developer",
-    name: "Revolución de lxs viejxs",
+    company: "Cambá Coop",
+    project: "Revolución de lxs viejxs",
+    client: "",
     tech: [
       "Python",
       "Django",
@@ -32,13 +36,15 @@ const experience = [
       "PostgreSQL",
     ],
     data:
-      "Project management and backend development with API-rest for mobile application. Implementation of login and render maps with react native.",
+      "Project management and developer tasks. Tech challenges: facebook login and map points with react native libraries.",
   },
   {
     id: "10",
     date: "Sept 2020",
     position: "Full Stack Developer",
-    name: "Consultancy Revenue System, Municipalidad Alte. Brown",
+    project: "Consultancy Revenue System",
+    client: "Municipalidad Alte. Brown",
+    company: "Cambá Coop",
     tech: ["PHP", "Symfony", "Mysql", "Docker"],
     data:
       "Review of good practices in the project with feedback and provision of knowledge of tools to improve development.",
@@ -47,7 +53,9 @@ const experience = [
     id: "9",
     date: "Aug 2020",
     position: "Javascript Developer",
-    name: "BI, Cambá Coop",
+    project: "Internal Business Intelligence",
+    company: "Cambá Coop",
+    client: "Cambá Coop",
     tech: [
       "Javascript",
       "React",
@@ -65,7 +73,9 @@ const experience = [
     date: "Jul 2020",
     // "date": "Jul 2020 - Aug 2020",
     position: "Backend Javascript Developer",
-    name: "Seguimos Educando, educ.ar",
+    project: "Seguimos Educando, educ.ar",
+    client: "Ministerio de Educación",
+    company: "Cambá Coop",
     tech: [
       "Javascript",
       "React",
@@ -82,7 +92,9 @@ const experience = [
     id: "7",
     date: "Jun 2020",
     position: "Backend Developer",
-    name: "Agencia Virtual, INTA",
+    project: "Agencia Virtual",
+    client: "INTA",
+    company: "Cambá Coop",
     tech: ["PHP", "Symfony", "Javascript"],
     data:
       "Resolved issues like add pagination -Controller and also with javascript-, changes filter queries on repository and some style fixes.",
@@ -91,7 +103,9 @@ const experience = [
     id: "6",
     date: "Jan 2020",
     position: "Full Stack Developer",
-    name: "Radio App Mobile, La Minga",
+    project: "Radio App Mobile",
+    client: "La Minga Radio",
+    company: "Cambá Coop",
     tech: [
       "Python",
       "Django",
@@ -107,7 +121,9 @@ const experience = [
     id: "5",
     date: "Dec 2019",
     position: "Full Stack Developer",
-    name: "A church near you, The Developer Society",
+    project: "A church near you, The Developer Society",
+    client: "The Developer Society",
+    company: "Cambá Coop",
     tech: ["Python", "Django", "Javascript"],
     data:
       "Resolved some frontend issues as a style fixes on different section on django website.",
@@ -117,7 +133,7 @@ const experience = [
     date: "Aug 2019",
     // "date": "Aug 2019 - Nov 2019",
     position: "Backend Developer",
-    name: "Admin Radios App, Cambá Coop",
+    project: "Admin Radios App, Cambá Coop",
     tech: ["Python", "Django", "Django REST", "Api-REST"],
     data:
       "I've developed a Django Admin that provides a generic API for a free-software mobile application for radios.",
@@ -126,7 +142,9 @@ const experience = [
     id: "3",
     date: "Jul 2019",
     position: "Frontend Developer",
-    name: "Landing Accesibilidad Digital, ADC",
+    project: "Landing Accesibilidad Digital",
+    client: "ADC",
+    company: "Cambá Coop",
     tech: ["Javascript", "Accessibility"],
     data:
       "Landing-page with features of digital accessibility in terms of programming.",
@@ -136,16 +154,20 @@ const experience = [
     date: "Jun 2019",
     // "date": "Jun 2019 - Jul 2020",
     position: "Member of Turnkey projects",
-    name: "Turnkey projects, Cambá Coop",
+    project: "", //Turnkey projects of Cambá Coop
+    company: "Cambá Coop",
+    client: "",
     tech: ["Task estimation", "Board management", "Discover product"],
     data:
-      "I’m responsible for creating and solving tasks, give technical counsel to team members, keep track of sprints and deadlines and attend to client meetings.",
+      "Management tasks in team: estimations, project planning, track sprints/deadlines, discover product with client reviews.",
   },
   {
     id: "1",
     date: "Jun 2019",
     position: "Frontend Developer",
-    name: "Web Site, Cambá Coop",
+    project: "Web Site",
+    company: "Cambá Coop",
+    client: "",
     tech: ["Javascript", "Vue", "PHP"],
     data:
       "Company presentation website custom designed using javascript libraries and developed using Vue.js.",
@@ -155,7 +177,9 @@ const experience = [
     date: "Oct 2018",
     // "date": "Oct 2018 - May 2019",
     position: "PHP Backend Developer",
-    name: "Application & Documents System, Municipalidad Alte. Brown",
+    project: "Application & Documents System",
+    company: "Municipalidad Alte. Brown",
+    client: "",
     tech: ["PHP", "Symfony", "Mysql", "Api-REST", "Javascript"],
     data:
       "The development was carried out in sprits through the analysis of functionalities with implementation on Symfony.",
