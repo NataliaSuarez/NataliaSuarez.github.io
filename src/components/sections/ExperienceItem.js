@@ -1,22 +1,13 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import { makeStyles } from "@material-ui/core";
 import Grid from "@material-ui/core/Grid";
 import ButtonBase from "@material-ui/core/ButtonBase";
+import BasicExperienceInformation from "./BasicExperienceInformation";
 
 const ExperienceItem = ({ experience, onClick }) => {
   const classes = useStyles();
 
-  const defaultText = (
-    <>
-      <span className={classes.strongDataText}>{`${experience.position}`}</span>{" "}
-      {`${experience.project ? "at project" : ""}`}{" "}
-      <span className={classes.italicDataText}>{`${experience.project}`}</span>{" "}
-      {`${experience.company ? "in " : ""}`}
-      <span className={classes.strongDataText}>{`${
-        experience.company ? experience.company : ""
-      }`}</span>
-    </>
-  );
+  const defaultText = <BasicExperienceInformation experience={experience} />;
 
   const [dataText, setDataText] = useState(defaultText);
 
@@ -57,7 +48,7 @@ const useStyles = makeStyles((theme) => ({
     cursor: "default",
     overflow: "hidden",
     transition: theme.transitions.create(["background-color", "transform"]),
-    transition: "0.5s",
+    // transition: "0.5s",
     "&:hover": {
       backgroundColor: "rgba(144,42,172,1)",
       "& div": {
@@ -98,7 +89,7 @@ const useStyles = makeStyles((theme) => ({
     fontSize: "9px",
     fontWeight: "300",
     transition: theme.transitions.create(["background-color", "transform"]),
-    transition: "0.5s",
+    // transition: "0.5s",
     "&:hover": {
       color: "white",
     },

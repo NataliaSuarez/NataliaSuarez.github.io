@@ -57,7 +57,7 @@ const Experience = () => {
   );
   const filteredExperience = useMemo(
     () => (filterExperienceList.length > 0 ? filterExperienceList : experience),
-    [selectedTechs]
+    [filterExperienceList]
   );
 
   /// HANDLE DIALOG
@@ -85,6 +85,7 @@ const Experience = () => {
           "column justify-start fz-5 color-gray-dark padding-v-small",
           classes.section
         )}
+        id="experience"
       >
         <div>
           <div className={classes.hightlightedText}>

@@ -1,10 +1,10 @@
 import React from "react";
 import { makeStyles } from "@material-ui/core";
 
-import Button from "@material-ui/core/Button";
 import Dialog from "@material-ui/core/Dialog";
 import Chip from "@material-ui/core/Chip";
 import HighlightOffIcon from "@material-ui/icons/HighlightOff";
+import BasicExperienceInformation from "./BasicExperienceInformation";
 
 const ExperienceDialog = ({ open, onClose, selectedExperience }) => {
   const classes = useStyles();
@@ -42,6 +42,12 @@ const ExperienceDialog = ({ open, onClose, selectedExperience }) => {
         </div>
         <div
           id="alert-dialog-description-experience"
+          className={classes.informationContent}
+        >
+          <BasicExperienceInformation experience={selectedExperience} />
+        </div>
+        <div
+          id="alert-dialog-description-experience"
           className={classes.dialogContent}
         >
           {selectedExperience?.data}
@@ -60,7 +66,6 @@ export default ExperienceDialog;
 
 const useStyles = makeStyles((theme) => ({
   dialogContainer: {
-    height: "250px",
     display: "flex",
     flexDirection: "column",
     justifyContent: "space-between",
@@ -69,9 +74,21 @@ const useStyles = makeStyles((theme) => ({
     padding: "10px",
   },
   dialogContent: {
-    fontSize: "13px",
+    fontSize: "15px",
+    fontWeight: "300",
+    color: "rgba(2,2,2,0.7)",
+    padding: "10px 15px",
+    margin: "10px 2px",
+    backgroundColor: "rgba(2,2,2,0.03)",
+    borderRadius: "5px",
+    fontStyle: "italic",
+    height: "130px",
+  },
+  informationContent: {
+    fontSize: "14px",
     fontWeight: "300",
     padding: "7px 3px 5px 0",
+    margin: "10px 5px",
   },
   roleTitle: {
     borderBottom: "2px solid rgba(144,42,172,1)",
@@ -89,7 +106,7 @@ const useStyles = makeStyles((theme) => ({
     },
   },
   techContainer: {
-    padding: "10px 0",
+    padding: "4px 0",
   },
   techName: {
     color: "rgba(144,42,172,1)",

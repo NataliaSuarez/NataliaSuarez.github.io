@@ -8,7 +8,7 @@ function Header() {
   const classes = useStyles();
 
   return (
-    <div className={classes.headerContainer}>
+    <div className={classes.headerContainer} id="presentation">
       <div className={classes.titleContainer}>
         <p className={classes.titleHeader}>
           <span id="name"></span>
@@ -20,40 +20,9 @@ function Header() {
         alt="computer"
         className={classes.imageHeader}
       />
-      {/* <div className={classes.linkContainer}>
-        <a
-          className={classes.link}
-          href="https://www.linkedin.com/in/natalia-suarez-dev/"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          LINKEDIN
-        </a>
-        <a
-          className={classes.link}
-          href="https://github.com/NataliaSuarez"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          GITHUB
-        </a>
-        <a
-          className={classes.link}
-          href="https://twitter.com/natsuarez42"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          TWITTER
-        </a>
-        <a
-          className={classes.link}
-          href="mailto:suarez.nataliam@gmail.com"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          NAT@DEV
-        </a>
-      </div> */}
+      {/* <a className={classes.button} href={`#${section}`}>
+        down
+      </a> */}
     </div>
   );
 }
@@ -243,81 +212,29 @@ const useStyles = makeStyles((theme) => ({
       marginLeft: "70px",
     },
   },
-  infoContainer: {
-    // height: "calc(100vh - 40vh)",
-    // display: "flex",
-    // backgroundImage: "url(/keyboard.jpg)",
-    // alignItems: "center",
-    // flexDirection: "column",
-    // justifyContent: "space-evenly",
-    // [`@media(min-width: 700px)`]: {
-    //   flexDirection: "row",
-    //   justifyContent: "space-between",
-    // },
-    // "& ::after": {
-    //   position: "absolute",
-    //   zIndex: 1,
-    //   top: 0,
-    //   right: 0,
-    //   bottom: 0,
-    //   left: 0,
-    //   content: "",
-    //   backgroundColor: "rgba( 29, 29, 27, .5 )",
-    // },
-  },
-  hightlightedText: {
-    // borderBottom: "13px solid deeppink",
-    // borderRight: "14px solid deeppink",
-    // borderTop: "4px solid deeppink",
-    // margin: 0,
-    // fontWeight: "300",
-    // fontSize: "15px",
-    // fontStyle: "italic",
-    // textAlign: "center",
-    // padding: "1vmin",
-    // background: "white",
-    // color: "black",
-    // width: "350px",
-    // height: "fit-content",
-  },
-  linkContainer: {
-    // display: "flex",
-    // padding: "0.5vmin",
-    // alignSelf: "center",
-    // paddingRight: "15px",
-    // flexDirection: "column",
-    // justifyContent: "space-around",
-    // [`@media(min-width: 700px)`]: {
-    //   alignSelf: "flex-end",
-    //   flexDirection: "row",
-    // },
-  },
-  link: {
-    // color: "white",
-    // fontWeight: "400",
-    // fontSize: "11px",
-    // width: "150px",
-    // padding: "2px 4px",
-    // inlineSize: "max-content",
-    // textDecoration: "unset",
-    // margin: "3px",
-    // background: "black",
-    // // alignSelf: "flex-start",
-    // "&:hover": {
-    //   fontWeight: "800",
-    //   color: "white",
-    // },
-    // [`@media(min-width: 700px)`]: {
-    //   fontWeight: "500",
-    //   fontSize: "15px",
-    //   padding: "10px 20px",
-    //   background: "transparent",
-    // },
-  },
+  infoContainer: {},
+  hightlightedText: {},
+  linkContainer: {},
+  link: {},
   spanVariableAnimation: {
     content: "algo",
     animation: "fadeIn 8s linear",
     animationDelay: "2s",
     animationIterationCount: "infinite",
+  },
+  button: {
+    padding: "4px",
+    background: "#333",
+    backdropFilter: "drop-shadow(4px 4px 10px blue)",
+    borderRadius: "50%",
+    width: "3em",
+    height: "3em",
+    color: "white",
+    position: "fixed",
+    bottom: "100px",
+    right: "100px",
+    display: "flex",
+    alignItems: "center",
+    justifyContent: "center",
   },
 }));

@@ -13,6 +13,7 @@ const AboutMe = () => {
         "column justify-start fz-5 color-gray-dark padding-v-small",
         classes.section
       )}
+      id="about-me"
     >
       <div className="row-custom">
         <div className="padding-vmin-v-small justify-s-between">

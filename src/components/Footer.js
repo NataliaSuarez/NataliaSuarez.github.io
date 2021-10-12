@@ -4,8 +4,8 @@ import clsx from "clsx";
 
 import LinkedInIcon from "@material-ui/icons/LinkedIn";
 import GitHubIcon from "@material-ui/icons/GitHub";
-import TwitterIcon from "@material-ui/icons/Twitter";
-import AlternateEmailIcon from "@material-ui/icons/AlternateEmail";
+// import TwitterIcon from "@material-ui/icons/Twitter";
+import EmailIcon from "@material-ui/icons/Email";
 
 import "../App.css";
 
@@ -15,6 +15,7 @@ function Footer() {
     <section
       className={clsx("background-gray-3", classes.section)}
       alt="Footer"
+      id="footer"
     >
       <div className={classes.footerContainer}>
         <p className={classes.footerNote}>
@@ -39,21 +40,21 @@ function Footer() {
             >
               <GitHubIcon style={{ fontSize: 40 }} />
             </a>
-            <a
+            {/* <a
               className={classes.linkItem}
               href="https://twitter.com/natsuarez42"
               target="_blank"
               rel="noopener noreferrer"
             >
               <TwitterIcon style={{ fontSize: 40 }} />
-            </a>
+            </a> */}
             <a
               className={classes.linkItem}
               href="mailto:suarez.nataliam@gmail.com"
               target="_blank"
               rel="noopener noreferrer"
             >
-              <AlternateEmailIcon style={{ fontSize: 40 }} />
+              <EmailIcon style={{ fontSize: 40 }} />
             </a>
           </div>
         </div>
