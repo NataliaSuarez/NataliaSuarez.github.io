@@ -1,9 +1,10 @@
-import React from "react";
 import { makeStyles } from "@material-ui/core";
 import clsx from "clsx";
-
-import Experience from "./sections/Experience";
+import React from "react";
 import "../App.css";
+import Experience from "./sections/Experience";
+import Portfolio from "./sections/Portfolio";
+
 
 const AboutMe = () => {
   const classes = useStyles();
@@ -20,18 +21,23 @@ const AboutMe = () => {
           <div className={classes.hightlightedText}>&gt; about me</div>
           <div className={classes.descriptionText}>
             <div>
-              I've been a backend developer programming on Django and Symfony
-              and I've had fun learning Node last year.
+              I've started my OOP and functional programming studies with languages like PHP and Python.
             </div>
-            <div>Now, I'm developing on frontend in React project.</div>
+            <div>
+              I have worked with Mysql, PostgreSql and MongoDB databases.
+            </div>
           </div>
           <div className={classes.descriptionText}>
             <div>
-              I think collective projects are a wonderful way to work in groups
-              of people where we can share experiences and knowledge.
+              I'm currently a Frontend Developer with React
             </div>
             <div>
-              I'm also interested in art, free software & technical challenges.
+              and on a daily basis I work with libraries such as zustand, styled-components, material ui, react-testing-library, apollo, and others.
+            </div>
+          </div>
+          <div className={classes.descriptionText}>
+            <div>
+              I'm motivated to learn new technologies, research and implement improvements and optimize and improve the code in each iteration.
             </div>
           </div>
         </div>
@@ -45,6 +51,8 @@ function Body() {
     <div>
       <AboutMe />
       <Experience />
+      {/* <Workshop /> */}
+      <Portfolio />
     </div>
   );
 }

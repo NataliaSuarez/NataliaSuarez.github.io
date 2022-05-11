@@ -1,0 +1,95 @@
+const blogData = [
+  {
+    id: "1",
+    date: "Oct 2021",
+    title: "Que se necesita para empezar a programar?",
+    tech: [
+      "Javascript",
+      "Paginas web",
+      "Programación",
+      "Conceptos base",
+      "Buenas prácticas",
+    ],
+    linkTo: "/blog/00-workshop01.md",
+  },
+  {
+    id: "2",
+    date: "Oct 2021",
+    title: "Que se necesita para empezar a programar?",
+    tech: [
+      "Javascript",
+      "Paginas web",
+      "Programación",
+      "Conceptos base",
+      "Buenas prácticas",
+    ],
+    linkTo: "/blog/00-workshop01.md",
+  },
+  {
+    id: "3",
+    date: "Oct 2021",
+    title: "Que se necesita para empezar a programar?",
+    tech: [
+      "Javascript",
+      "Paginas web",
+      "Programación",
+      "Conceptos base",
+      "Buenas prácticas",
+    ],
+    linkTo: "/blog/00-workshop01.md",
+  },
+  {
+    id: "4",
+    date: "Oct 2021",
+    title: "Que se necesita para empezar a programar?",
+    tech: [
+      "Javascript",
+      "Paginas web",
+      "Programación",
+      "Conceptos base",
+      "Buenas prácticas",
+    ],
+    linkTo: "/blog/00-workshop01.md",
+  },
+  {
+    id: "5",
+    date: "Oct 2021",
+    title: "Que se necesita para empezar a programar?",
+    tech: [
+      "Javascript",
+      "Paginas web",
+      "Programación",
+      "Conceptos base",
+      "Buenas prácticas",
+    ],
+    linkTo: "/blog/00-workshop01.md",
+  },
+  {
+    id: "6",
+    date: "Oct 2021",
+    title: "Que se necesita para empezar a programar?",
+    tech: [
+      "Javascript",
+      "Paginas web",
+      "Programación",
+      "Conceptos base",
+      "Buenas prácticas",
+    ],
+    linkTo: "/blog/00-workshop01.md",
+  },
+  {
+    id: "7",
+    date: "Oct 2021",
+    title: "Que se necesita para empezar a programar?",
+    tech: [
+      "Javascript",
+      "Paginas web",
+      "Programación",
+      "Conceptos base",
+      "Buenas prácticas",
+    ],
+    linkTo: "/blog/00-workshop01.md",
+  },
+];
+
+export default blogData;

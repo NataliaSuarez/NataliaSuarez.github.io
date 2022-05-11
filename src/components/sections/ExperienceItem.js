@@ -47,16 +47,18 @@ const useStyles = makeStyles((theme) => ({
     padding: "6px",
     cursor: "default",
     overflow: "hidden",
-    transition: theme.transitions.create(["background-color", "transform"]),
-    // transition: "0.5s",
+    transition: theme.transitions.create(["background-color", "transform"], { duration: '.3s'}),
     "&:hover": {
       backgroundColor: "rgba(144,42,172,1)",
+      transform: 'scale(1.2)',
+      boxShadow: '0px 2px 20px rgba(0,0,0,.1)',
       "& div": {
         color: "white",
         borderBottom: "2px solid white",
       },
       "& span": {
         color: "white",
+        fontSize: '12px',
       },
     },
     "&:focus": {
@@ -86,7 +88,7 @@ const useStyles = makeStyles((theme) => ({
   },
   infoText: {
     color: "#333",
-    fontSize: "9px",
+    fontSize: "12px",
     fontWeight: "300",
     transition: theme.transitions.create(["background-color", "transform"]),
     // transition: "0.5s",
@@ -94,10 +96,10 @@ const useStyles = makeStyles((theme) => ({
       color: "white",
     },
     [`@media(min-width: 700px)`]: {
-      fontSize: "10px",
+      fontSize: "14px",
     },
     [`@media(min-width: 1200px)`]: {
-      fontSize: "12px",
+      fontSize: "16px",
     },
   },
   strongDataText: {
